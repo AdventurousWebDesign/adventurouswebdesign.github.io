@@ -1,10 +1,18 @@
 @import "uikit";
 @import "pygment";
+@import "fonts";
 
 @banner-height 	: 475px;
 @tm-white 		: white;
 
 .disable-hover, .disable-hover * { pointer-events: none; }
+
+#logo {
+	font-size: (@base-h1-font-size * 1.25);
+	line-height: (@base-h1-font-size * 1.15);
+}
+
+.italic { font-style: italic; }
 
 .tm-header-bg {
 	width:100%;
@@ -37,6 +45,9 @@
 	& + .tm-header-container {
 		height: @banner-height;
 		h1, h2, h3 { color: @tm-white; }
+		#logo .italic {
+			font-size: (@base-h1-font-size * 1.25) - 4px;
+		}
 	}
 
 }
