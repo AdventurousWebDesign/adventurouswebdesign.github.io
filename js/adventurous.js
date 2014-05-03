@@ -8,6 +8,7 @@ $(function(){
   $body  = $("body");              
   $bgBlur = $(".bg-blur");
   $tmHeaders = $('.tm-header-bg div');
+  $logo = $('#logo');
                 
   var bgBlurHeight = $bgBlur.height();
   var scrollFlag = false;
@@ -29,7 +30,8 @@ $(function(){
 	    var _alpha = (scrollTop / bgBlurHeight) * blurWhenReach;
 	    if(_alpha > 1){ _alpha = 1 }
 		  TweenMax.set($bgBlur, {alpha: _alpha });
-		  $tmHeaders.css('background-position', '0 -' + scrollTop / 3.33 + 'px');
+		  $tmHeaders.css('background-position', 'center -' + scrollTop / 3.33 + 'px');
+		  $logo.css('padding-top', scrollTop / 2 + 'px');
 	  }
 	               
    });
