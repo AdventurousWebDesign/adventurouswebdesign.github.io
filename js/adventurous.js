@@ -13,7 +13,7 @@ $(function(){
   var bgBlurHeight = $bgBlur.height();
   var scrollFlag = false;
   var scrollThreshold  = 0.25; //used to debounce pointer events 
-  var blurWhenReach = 3; //blur factor, 3 means the imahe will be blurred when you scroll 1/3 of the div
+  var blurWhenReach = 2; //blur factor, 3 means the imahe will be blurred when you scroll 1/3 of the div
                 
   $window.on("scroll", function(event){
 	               
@@ -30,6 +30,7 @@ $(function(){
 	    var _alpha = (scrollTop / bgBlurHeight) * blurWhenReach;
 	    if(_alpha > 1){ _alpha = 1 }
 		  TweenMax.set($bgBlur, {alpha: _alpha });
+		  TweenMax.set($logo, {alpha: 1 - (_alpha * 0.8 ) });
 		  $tmHeaders.css('background-position', 'center -' + scrollTop / 3.33 + 'px');
 		  $logo.css('padding-top', scrollTop / 2 + 'px');
 	  }
