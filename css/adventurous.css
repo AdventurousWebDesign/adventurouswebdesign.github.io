@@ -7200,3 +7200,43 @@ pre .il {
   font-weight: bold;
 }
 /* Literal.Number.Integer.Long */
+.disable-hover,
+.disable-hover * {
+  pointer-events: none;
+}
+.tm-header-bg {
+  width: 100%;
+  height: 475px;
+  position: fixed;
+  z-index: -100;
+}
+.tm-header-bg > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 475px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+}
+.tm-header-bg .bg-mountain {
+  z-index: 10;
+  background-image: url(/assets/mountains.jpg);
+}
+.tm-header-bg .bg-mountainblur {
+  z-index: 20;
+  background-image: url(/assets/mountains-blurred.jpg);
+  opacity: 0;
+}
+.tm-header-bg + .tm-header-container {
+  height: 475px;
+}
+.tm-header-bg + .tm-header-container h1,
+.tm-header-bg + .tm-header-container h2,
+.tm-header-bg + .tm-header-container h3 {
+  color: #ffffff;
+}
+.tm-container {
+  background: white;
+}

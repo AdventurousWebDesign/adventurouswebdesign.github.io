@@ -21,13 +21,18 @@
         <![endif]-->
         {% if page.header %}
           {% include {{page.header}} %}
+        <div class="tm-container">
         {% endif %}
         <div class="uk-container uk-container-center">
             {{ content }}
         </div>
+        {% if page.header %}
+        </div>
+        {% endif %}
         <!-- JavaScript libraries -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        {% if page.header %}<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>{% endif %}
         <script src="/js/uikit.min.js"></script>
-        <script src="/js/adventurous.min.js"></script>
+        <script src="/js/adventurous.js"></script>
     </body>
 </html>

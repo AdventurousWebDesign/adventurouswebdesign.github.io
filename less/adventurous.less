@@ -1,2 +1,46 @@
 @import "uikit";
 @import "pygment";
+
+@banner-height 	: 475px;
+@tm-white 		: white;
+
+.disable-hover, .disable-hover * { pointer-events: none; }
+
+.tm-header-bg {
+	width:100%;
+	height: @banner-height;
+	position: fixed;
+	z-index:-100;
+
+	> div {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: @banner-height;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center 0;
+	}
+
+	.bg-mountain {
+		z-index:10;
+		background-image:url(/assets/mountains.jpg);
+	}
+
+	.bg-mountainblur {
+		z-index:20;
+		background-image:url(/assets/mountains-blurred.jpg);
+		opacity:0;
+	}
+
+	& + .tm-header-container {
+		height: @banner-height;
+		h1, h2, h3 { color: @tm-white; }
+	}
+
+}
+
+.tm-container {
+	background: white;
+}
