@@ -9,10 +9,12 @@ $(function(){
   $bgBlur = $(".bg-blur");
   $tmHeaders = $('.tm-header-bg div');
   $logo = $('#logo');
+
+  $logo.empty().append($('<img />', {src: '/assets/adventurouswebdesign.svg', style: 'padding-top:20px'}));
                 
   var bgBlurHeight = $bgBlur.height();
   var scrollFlag = false;
-  var scrollThreshold  = 0.25; //used to debounce pointer events 
+  var scrollThreshold  = 0.15; //used to debounce pointer events 
   var blurWhenReach = 2; //blur factor, 3 means the imahe will be blurred when you scroll 1/3 of the div
                 
   $window.on("scroll", function(event){
@@ -31,7 +33,7 @@ $(function(){
 	    if(_alpha > 1){ _alpha = 1 }
 		  TweenMax.set($bgBlur, {alpha: _alpha });
 		  TweenMax.set($logo, {alpha: 1 - (_alpha * 0.8 ) });
-		  $tmHeaders.css('background-position', 'center -' + scrollTop / 3.33 + 'px');
+		  $tmHeaders.css('background-position', 'center -' + scrollTop / 3 + 'px');
 		  $logo.css('padding-top', scrollTop / 2 + 'px');
 	  }
 	               

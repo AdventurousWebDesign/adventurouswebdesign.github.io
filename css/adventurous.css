@@ -7226,7 +7226,7 @@ pre .il {
 }
 .tm-header-bg {
   width: 100%;
-  height: 475px;
+  height: 550px;
   position: fixed;
   z-index: -100;
 }
@@ -7235,7 +7235,7 @@ pre .il {
   top: 0;
   left: 0;
   width: 100%;
-  height: 475px;
+  height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -7250,7 +7250,7 @@ pre .il {
   opacity: 0;
 }
 .tm-header-bg + .tm-header-container {
-  height: 475px;
+  height: 550px;
 }
 .tm-header-bg + .tm-header-container h1,
 .tm-header-bg + .tm-header-container h2,
