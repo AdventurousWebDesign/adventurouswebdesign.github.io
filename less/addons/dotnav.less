@@ -1,0 +1,117 @@
+// Name:            Dotnav
+// Description:     Defines styles for a dot navigation
+//
+// Component:       `uk-dotnav`
+//
+// Modifier:        `uk-dotnav-vertical`
+//
+// ========================================================================
+
+@import "../../../src/less/variables.less";
+
+
+// Variables
+// ========================================================================
+
+@dotnav-margin:                            15px;
+@dotnav-vertical-margin:                   @dotnav-margin;
+@dotnav-width:                             20px;
+@dotnav-height:                            @dotnav-width;
+@dotnav-background:                        #eee;
+@dotnav-hover-background:                  #bbb;
+@dotnav-active-background:                 #bbb;
+@dotnav-onclick-background:                #aaa;
+
+
+/* ========================================================================
+   Addon: Dotnav
+ ========================================================================== */
+
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+
+.uk-dotnav {
+    /* 1 */
+    padding: 0;
+    list-style: none;
+    /* 2 */
+    font-size: 0.001px;
+}
+
+
+/* Items
+ ========================================================================== */
+
+/*
+ * 1. Reset whitespace hack
+ */
+
+.uk-dotnav > li { font-size: 1rem; }
+
+.uk-dotnav > li,
+.uk-dotnav > li > a { display: inline-block; }
+
+.uk-dotnav > li:nth-child(n+2) { margin-left: @dotnav-margin; }
+
+/*
+ * Items
+ * 1. Hide text
+ */
+
+.uk-dotnav > li > a {
+    width: @dotnav-width;
+    height: @dotnav-height;
+    border-radius: 50%;
+    background: @dotnav-background;
+    /* 1 */
+    overflow: hidden;
+    text-indent: -999%;
+    .hook-dotnav-item;
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+
+.uk-dotnav > li > a:hover,
+.uk-dotnav > li > a:focus { /* 1 */
+    background: @dotnav-hover-background;
+    outline: none; /* 2 */
+    .hook-dotnav-item-hover;
+}
+
+/* Active */
+.uk-dotnav > li.uk-active > a {
+    background: @dotnav-active-background;
+    .hook-dotnav-item-active;
+}
+
+/* OnClick */
+.uk-dotnav > li > a:active {
+    background: @dotnav-onclick-background;
+    .hook-dotnav-item-onclick;
+}
+
+
+/* Modifier: 'dotnav-vertical'
+ ========================================================================== */
+
+.uk-dotnav-vertical > li { display: block; }
+
+.uk-dotnav-vertical > li:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: @dotnav-vertical-margin;
+}
+
+
+// Hooks
+// ========================================================================
+
+.hook-dotnav-item() {}
+.hook-dotnav-item-hover() {}
+.hook-dotnav-item-active() {}
+.hook-dotnav-item-onclick() {}
