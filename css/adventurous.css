@@ -346,13 +346,13 @@ table {
  * `font-size` is set in `html` element to support the `rem` unit for font-sizes
  */
 html {
-  font-size: 14px;
+  font-size: 18px;
 }
 body {
   background: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 20px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 27px;
   color: #444444;
 }
 /* Phone landscape and smaller */
@@ -7213,6 +7213,18 @@ pre .il {
   src: url('/assets/fanwood/fanwood_italic-webfont.eot?') format('eot');
   src: local('☺︎'), url('/assets/fanwood/fanwood_italic-webfont.eot?') format('eot'), url('/assets/fanwood/fanwood_italic-webfont.woff') format('woff'), url('/assets/fanwood/fanwood_italic-webfont.otf') format('opentype'), url('/assets/fanwood/fanwood_italic-webfont.ttf') format('truetype'), url('/assets/fanwood/fanwood_italic-webfont.svg#FanwoodRegular') format('svg');
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 .disable-hover,
 .disable-hover * {
   pointer-events: none;
@@ -7223,6 +7235,14 @@ pre .il {
 }
 .italic {
   font-style: italic;
+}
+.tagline {
+  font-size: 60px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+#content {
+  padding-top: 60px;
 }
 .tm-header-bg {
   width: 100%;

@@ -4,6 +4,7 @@
 
 @banner-height 	: 550px;
 @tm-white 		: white;
+@tagline-size	: 60px;
 
 .disable-hover, .disable-hover * { pointer-events: none; }
 
@@ -13,6 +14,16 @@
 }
 
 .italic { font-style: italic; }
+
+.tagline {
+    font-size: @tagline-size;
+    font-style: italic;
+    margin-bottom: @tagline-size / 2;
+}
+
+#content {
+    padding-top: 60px;
+}
 
 .tm-header-bg {
 	width:100%;
