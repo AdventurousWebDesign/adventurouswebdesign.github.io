@@ -1,6 +1,7 @@
 @import "uikit";
 @import "pygment";
 @import "fonts";
+@import "colors";
 @import "typography";
 
 @banner-height 	: 550px;
@@ -22,9 +23,17 @@
     margin-bottom: @tagline-size / 2;
 }
 
-#content {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.bg-grey {
+	background: @grey;
+}
+
+.icon-link i {
+	padding-right: 10px;
+}
+
+.padding-lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .tm-header-bg {
@@ -67,4 +76,19 @@
 
 .tm-container {
 	background: white;
+	overflow: hidden;
 }
+
+.hook-article-meta {
+	margin: 0px;
+	& + p {
+		margin-top: 15px;
+	}
+}
+
+.hook-article-title {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: @breakpoint-large) { #macbook svg { min-width: 530px; } }
+@media screen and (min-width: @breakpoint-xlarge) { #macbook svg { min-width: 630px; } }

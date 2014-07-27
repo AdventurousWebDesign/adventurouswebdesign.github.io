@@ -375,7 +375,7 @@ body {
  */
 a,
 .uk-link {
-  color: #0077dd;
+  color: #518dca;
   text-decoration: none;
   cursor: pointer;
 }
@@ -515,13 +515,13 @@ h6 {
 }
 h1,
 .uk-h1 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 46px;
+  line-height: 52px;
 }
 h2,
 .uk-h2 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 34px;
+  line-height: 40px;
 }
 h3,
 .uk-h3 {
@@ -1501,6 +1501,7 @@ iframe {
   line-height: 42px;
   font-weight: normal;
   text-transform: none;
+  margin-bottom: 10px;
 }
 .uk-article-title a {
   color: inherit;
@@ -1512,6 +1513,10 @@ iframe {
   font-size: 12px;
   line-height: 18px;
   color: #999999;
+  margin: 0px;
+}
+.uk-article-meta + p {
+  margin-top: 15px;
 }
 /* Sub-object `uk-article-lead`
  ========================================================================== */
@@ -3330,8 +3335,8 @@ select.uk-form-width-mini {
  ========================================================================== */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot");
-  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff") format("woff"), url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.ttf") format("truetype");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts//fontawesome-webfont.eot");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts//fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts//fontawesome-webfont.woff") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts//fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -3590,6 +3595,8 @@ select.uk-form-width-mini {
 .uk-icon-video-camera:before {
   content: "\f03d";
 }
+.uk-icon-photo:before,
+.uk-icon-image:before,
 .uk-icon-picture-o:before {
   content: "\f03e";
 }
@@ -3953,6 +3960,8 @@ select.uk-form-width-mini {
 .uk-icon-square:before {
   content: "\f0c8";
 }
+.uk-icon-navicon:before,
+.uk-icon-reorder:before,
 .uk-icon-bars:before {
   content: "\f0c9";
 }
@@ -4012,11 +4021,11 @@ select.uk-form-width-mini {
   content: "\f0dc";
 }
 .uk-icon-sort-down:before,
-.uk-icon-sort-asc:before {
+.uk-icon-sort-desc:before {
   content: "\f0dd";
 }
 .uk-icon-sort-up:before,
-.uk-icon-sort-desc:before {
+.uk-icon-sort-asc:before {
   content: "\f0de";
 }
 .uk-icon-envelope:before {
@@ -4206,10 +4215,8 @@ select.uk-form-width-mini {
 .uk-icon-code:before {
   content: "\f121";
 }
+.uk-icon-mail-reply-all:before,
 .uk-icon-reply-all:before {
-  content: "\f122";
-}
-.uk-icon-mail-reply-all:before {
   content: "\f122";
 }
 .uk-icon-star-half-empty:before,
@@ -4556,6 +4563,238 @@ select.uk-form-width-mini {
 }
 .uk-icon-plus-square-o:before {
   content: "\f196";
+}
+.uk-icon-space-shuttle:before {
+  content: "\f197";
+}
+.uk-icon-slack:before {
+  content: "\f198";
+}
+.uk-icon-envelope-square:before {
+  content: "\f199";
+}
+.uk-icon-wordpress:before {
+  content: "\f19a";
+}
+.uk-icon-openid:before {
+  content: "\f19b";
+}
+.uk-icon-institution:before,
+.uk-icon-bank:before,
+.uk-icon-university:before {
+  content: "\f19c";
+}
+.uk-icon-mortar-board:before,
+.uk-icon-graduation-cap:before {
+  content: "\f19d";
+}
+.uk-icon-yahoo:before {
+  content: "\f19e";
+}
+.uk-icon-google:before {
+  content: "\f1a0";
+}
+.uk-icon-reddit:before {
+  content: "\f1a1";
+}
+.uk-icon-reddit-square:before {
+  content: "\f1a2";
+}
+.uk-icon-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+.uk-icon-stumbleupon:before {
+  content: "\f1a4";
+}
+.uk-icon-delicious:before {
+  content: "\f1a5";
+}
+.uk-icon-digg:before {
+  content: "\f1a6";
+}
+.uk-icon-pied-piper-square:before,
+.uk-icon-pied-piper:before {
+  content: "\f1a7";
+}
+.uk-icon-pied-piper-alt:before {
+  content: "\f1a8";
+}
+.uk-icon-drupal:before {
+  content: "\f1a9";
+}
+.uk-icon-joomla:before {
+  content: "\f1aa";
+}
+.uk-icon-language:before {
+  content: "\f1ab";
+}
+.uk-icon-fax:before {
+  content: "\f1ac";
+}
+.uk-icon-building:before {
+  content: "\f1ad";
+}
+.uk-icon-child:before {
+  content: "\f1ae";
+}
+.uk-icon-paw:before {
+  content: "\f1b0";
+}
+.uk-icon-spoon:before {
+  content: "\f1b1";
+}
+.uk-icon-cube:before {
+  content: "\f1b2";
+}
+.uk-icon-cubes:before {
+  content: "\f1b3";
+}
+.uk-icon-behance:before {
+  content: "\f1b4";
+}
+.uk-icon-behance-square:before {
+  content: "\f1b5";
+}
+.uk-icon-steam:before {
+  content: "\f1b6";
+}
+.uk-icon-steam-square:before {
+  content: "\f1b7";
+}
+.uk-icon-recycle:before {
+  content: "\f1b8";
+}
+.uk-icon-automobile:before,
+.uk-icon-car:before {
+  content: "\f1b9";
+}
+.uk-icon-cab:before,
+.uk-icon-taxi:before {
+  content: "\f1ba";
+}
+.uk-icon-tree:before {
+  content: "\f1bb";
+}
+.uk-icon-spotify:before {
+  content: "\f1bc";
+}
+.uk-icon-deviantart:before {
+  content: "\f1bd";
+}
+.uk-icon-soundcloud:before {
+  content: "\f1be";
+}
+.uk-icon-database:before {
+  content: "\f1c0";
+}
+.uk-icon-file-pdf-o:before {
+  content: "\f1c1";
+}
+.uk-icon-file-word-o:before {
+  content: "\f1c2";
+}
+.uk-icon-file-excel-o:before {
+  content: "\f1c3";
+}
+.uk-icon-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+.uk-icon-file-photo-o:before,
+.uk-icon-file-picture-o:before,
+.uk-icon-file-image-o:before {
+  content: "\f1c5";
+}
+.uk-icon-file-zip-o:before,
+.uk-icon-file-archive-o:before {
+  content: "\f1c6";
+}
+.uk-icon-file-sound-o:before,
+.uk-icon-file-audio-o:before {
+  content: "\f1c7";
+}
+.uk-icon-file-movie-o:before,
+.uk-icon-file-video-o:before {
+  content: "\f1c8";
+}
+.uk-icon-file-code-o:before {
+  content: "\f1c9";
+}
+.uk-icon-vine:before {
+  content: "\f1ca";
+}
+.uk-icon-codepen:before {
+  content: "\f1cb";
+}
+.uk-icon-jsfiddle:before {
+  content: "\f1cc";
+}
+.uk-icon-life-bouy:before,
+.uk-icon-life-saver:before,
+.uk-icon-support:before,
+.uk-icon-life-ring:before {
+  content: "\f1cd";
+}
+.uk-icon-circle-o-notch:before {
+  content: "\f1ce";
+}
+.uk-icon-ra:before,
+.uk-icon-rebel:before {
+  content: "\f1d0";
+}
+.uk-icon-ge:before,
+.uk-icon-empire:before {
+  content: "\f1d1";
+}
+.uk-icon-git-square:before {
+  content: "\f1d2";
+}
+.uk-icon-git:before {
+  content: "\f1d3";
+}
+.uk-icon-hacker-news:before {
+  content: "\f1d4";
+}
+.uk-icon-tencent-weibo:before {
+  content: "\f1d5";
+}
+.uk-icon-qq:before {
+  content: "\f1d6";
+}
+.uk-icon-wechat:before,
+.uk-icon-weixin:before {
+  content: "\f1d7";
+}
+.uk-icon-send:before,
+.uk-icon-paper-plane:before {
+  content: "\f1d8";
+}
+.uk-icon-send-o:before,
+.uk-icon-paper-plane-o:before {
+  content: "\f1d9";
+}
+.uk-icon-history:before {
+  content: "\f1da";
+}
+.uk-icon-circle-thin:before {
+  content: "\f1db";
+}
+.uk-icon-header:before {
+  content: "\f1dc";
+}
+.uk-icon-paragraph:before {
+  content: "\f1dd";
+}
+.uk-icon-sliders:before {
+  content: "\f1de";
+}
+.uk-icon-share-alt:before {
+  content: "\f1e0";
+}
+.uk-icon-share-alt-square:before {
+  content: "\f1e1";
+}
+.uk-icon-bomb:before {
+  content: "\f1e2";
 }
 /* ========================================================================
    Component: Close
@@ -7237,13 +7476,20 @@ a {
   text-decoration: underline;
   font-size: 24px;
 }
+hr {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.smaller {
+  font-size: 80%;
+}
 .disable-hover,
 .disable-hover * {
   pointer-events: none;
 }
 #logo {
-  font-size: 45px;
-  line-height: 41.4px;
+  font-size: 57.5px;
+  line-height: 52.9px;
 }
 .italic {
   font-style: italic;
@@ -7253,9 +7499,15 @@ a {
   font-style: italic;
   margin-bottom: 30px;
 }
-#content {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.bg-grey {
+  background: #fafafa;
+}
+.icon-link i {
+  padding-right: 10px;
+}
+.padding-lg {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .tm-header-bg {
   width: 100%;
@@ -7291,8 +7543,28 @@ a {
   color: #ffffff;
 }
 .tm-header-bg + .tm-header-container #logo .italic {
-  font-size: 41px;
+  font-size: 53.5px;
 }
 .tm-container {
   background: white;
+  overflow: hidden;
+}
+.hook-article-meta {
+  margin: 0px;
+}
+.hook-article-meta + p {
+  margin-top: 15px;
+}
+.hook-article-title {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 960px) {
+  #macbook svg {
+    min-width: 530px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #macbook svg {
+    min-width: 630px;
+  }
 }

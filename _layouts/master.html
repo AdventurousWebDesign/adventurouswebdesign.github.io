@@ -23,9 +23,9 @@
           {% include {{page.header}} %}
         <div class="tm-container">
         {% endif %}
-        <div id="content" class="uk-container uk-container-center">
+        {% if page.container != false %}<div id="content" class="uk-container uk-container-center">{% endif %}
             {{ content }}
-        </div>
+        {% if page.container != false %}</div>{% endif %}
         {% if page.header %}
         </div>
         {% endif %}
