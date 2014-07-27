@@ -469,7 +469,7 @@ pre,
 address,
 fieldset,
 figure {
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
 }
 /*
  * Don't worry about the universal selector.
@@ -485,7 +485,7 @@ figure {
 * + address,
 * + fieldset,
 * + figure {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 /* Headings
  ========================================================================== */
@@ -495,7 +495,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
   font-family: "Fanwood", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #444444;
@@ -7225,6 +7225,18 @@ pre .il {
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+.font-sans {
+  font-family: 'Open Sans';
+}
+.font-serif {
+  font-family: 'Fanwood';
+}
+a {
+  font-family: 'Fanwood';
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 24px;
+}
 .disable-hover,
 .disable-hover * {
   pointer-events: none;
@@ -7243,6 +7255,7 @@ pre .il {
 }
 #content {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .tm-header-bg {
   width: 100%;
