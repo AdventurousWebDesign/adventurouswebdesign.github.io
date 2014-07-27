@@ -9,6 +9,7 @@ $(function(){
   $bgBlur = $(".bg-blur");
   $tmHeaders = $('.tm-header-bg div');
   $logo = $('#logo');
+  $parallax = $('[data-parallax]');
 
   $logo.empty().append($('<img />', {src: '/assets/adventurouswebdesign.svg', style: 'padding-top:20px'}));
                 
@@ -17,7 +18,7 @@ $(function(){
   var scrollThreshold  = 0.15; //used to debounce pointer events 
   var blurWhenReach = 2; //blur factor, 3 means the imahe will be blurred when you scroll 1/3 of the div
                 
-  $window.on("scroll", function(event){
+  $window.on("scroll ready", function(event){
 	               
 	  var scrollTop = $window.scrollTop(); 
 	               
@@ -36,6 +37,13 @@ $(function(){
 		  $tmHeaders.css('background-position', 'center -' + scrollTop / 3 + 'px');
 		  $logo.css('padding-top', scrollTop / 2 + 'px');
 	  }
+
+	  
+	$parallax.css('background-position', 'center -' 
+		+ ($parallax.offset().top - (scrollTop * 0.9))
+		+ 'px'
+	);
+	  
 	               
    });
 	

@@ -1337,6 +1337,12 @@ iframe {
     left: -90%;
   }
 }
+.uk-grid-nomargin {
+  padding-left: 25px;
+}
+.uk-grid-nomargin [class*='uk-width-'] {
+  padding-left: 0px;
+}
 /* ========================================================================
    Component: Panel
  ========================================================================== */
@@ -7470,6 +7476,16 @@ pre .il {
 .font-serif {
   font-family: 'Fanwood';
 }
+.bg-mountains-alt {
+  background-image: url('../assets/prime_cuts.jpg');
+}
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5 {
+  color: white;
+}
 a {
   font-family: 'Fanwood';
   font-style: italic;
@@ -7557,6 +7573,10 @@ hr {
 }
 .hook-article-title {
   margin-bottom: 10px;
+}
+.portfolio-grid .uk-overlay,
+.portfolio-grid img {
+  width: 100%;
 }
 @media screen and (min-width: 960px) {
   #macbook svg {
