@@ -65,6 +65,14 @@ module.exports = function(grunt) {
                       "js/src/toggle.js",
                       ],
                 dest: "js/uikit.js"
+            },
+            avgrund: {
+              options: {
+                mangle: false
+              },
+              src: ["js/src/avgrund.js",
+                    "js/adventurous.js"],
+              dest: "js/adventurous_libs.js"
             }
         },
 
@@ -85,6 +93,11 @@ module.exports = function(grunt) {
                 files: {
                     "js/adventurous.min.js": ["js/adventurous.js"],
                     "js/uikit.min.js": ["js/uikit.js"]
+                }
+            },
+            avgrund: {
+                files: {
+                    "js/adventurous.min.js": ["js/adventurous.js"]
                 }
             }
         },
@@ -108,7 +121,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-banner");
 
     // Register grunt tasks
-    grunt.registerTask("build", ["jshint", "less", "cssmin", "concat", "uglify", "usebanner"]);
+    grunt.registerTask("build", ["jshint", "less", "cssmin", "concat:dist", "uglify:distmin", "usebanner", "concat:avgrund"]);
     grunt.registerTask("default", ["build"]);
 
 };
