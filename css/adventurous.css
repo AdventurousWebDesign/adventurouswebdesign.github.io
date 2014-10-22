@@ -2680,6 +2680,12 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-list-space > li:nth-child(n+2) {
   margin-top: 10px;
 }
+.uk-list.uk-list-small {
+  font-size: 0.8em;
+}
+.uk-list.uk-list-indented {
+  padding-left: 30px;
+}
 /* ========================================================================
    Component: Description list
  ========================================================================== */
@@ -7697,6 +7703,11 @@ hr {
 .portfolio-grid .uk-overlay,
 .portfolio-grid img {
   width: 100%;
+}
+.icon-list .icon-list__icon {
+  min-width: 30px;
+  display: inline-block;
+  text-align: center;
 }
 @media screen and (min-width: 960px) {
   #macbook svg {
