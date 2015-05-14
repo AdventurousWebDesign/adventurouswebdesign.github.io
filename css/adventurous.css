@@ -7027,42 +7027,48 @@ pre .hll {
   background-color: #ffffcc;
 }
 pre {
-  background: #f0f0f0;
+  background: #2d2c2b;
 }
 pre .c {
-  color: #60a0b0;
+  color: #716d6a;
   font-style: italic;
 }
 /* Comment */
 pre .err {
-  border: 1px solid #ff0000;
+  border: 1px solid #d02000;
 }
 /* Error */
-pre .k {
-  color: #007020;
-  font-weight: bold;
+pre .p {
+  color: #c0d5c1;
+}
+pre .p + .nx {
+  color: #4070a0;
+}
+pre .k,
+pre .nx {
+  color: #90c93f;
 }
 /* Keyword */
 pre .o {
-  color: #666666;
+  color: #90c93f;
 }
 /* Operator */
 pre .cm {
-  color: #60a0b0;
+  color: #716d6a;
   font-style: italic;
 }
 /* Comment.Multiline */
 pre .cp {
-  color: #007020;
+  color: #90c93f;
 }
 /* Comment.Preproc */
 pre .c1 {
-  color: #60a0b0;
+  color: #716d6a;
   font-style: italic;
 }
 /* Comment.Single */
 pre .cs {
-  color: #60a0b0;
+  color: #716d6a;
   background-color: #fff0f0;
 }
 /* Comment.Special */
@@ -7075,7 +7081,7 @@ pre .ge {
 }
 /* Generic.Emph */
 pre .gr {
-  color: #ff0000;
+  color: #d02000;
 }
 /* Generic.Error */
 pre .gh {
@@ -7110,26 +7116,26 @@ pre .gt {
 }
 /* Generic.Traceback */
 pre .kc {
-  color: #007020;
+  color: #90c93f;
   font-weight: bold;
 }
 /* Keyword.Constant */
 pre .kd {
-  color: #007020;
+  color: #f5c504;
   font-weight: bold;
 }
 /* Keyword.Declaration */
 pre .kn {
-  color: #007020;
+  color: #90c93f;
   font-weight: bold;
 }
 /* Keyword.Namespace */
 pre .kp {
-  color: #007020;
+  color: #90c93f;
 }
 /* Keyword.Pseudo */
 pre .kr {
-  color: #007020;
+  color: #90c93f;
   font-weight: bold;
 }
 /* Keyword.Reserved */
@@ -7150,7 +7156,7 @@ pre .na {
 }
 /* Name.Attribute */
 pre .nb {
-  color: #007020;
+  color: #90c93f;
 }
 /* Name.Builtin */
 pre .nc {
@@ -7173,7 +7179,7 @@ pre .ni {
 }
 /* Name.Entity */
 pre .ne {
-  color: #007020;
+  color: #90c93f;
 }
 /* Name.Exception */
 pre .nf {
@@ -7200,7 +7206,7 @@ pre .nv {
 }
 /* Name.Variable */
 pre .ow {
-  color: #007020;
+  color: #90c93f;
   font-weight: bold;
 }
 /* Operator.Word */
@@ -7264,7 +7270,7 @@ pre .sr {
 }
 /* Literal.String.Regex */
 pre .s1 {
-  color: #4070a0;
+  color: #ce830d;
 }
 /* Literal.String.Single */
 pre .ss {
@@ -7272,7 +7278,7 @@ pre .ss {
 }
 /* Literal.String.Symbol */
 pre .bp {
-  color: #007020;
+  color: #90c93f;
 }
 /* Name.Builtin.Pseudo */
 pre .vc {
