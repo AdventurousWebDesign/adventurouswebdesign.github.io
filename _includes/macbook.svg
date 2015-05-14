@@ -169,7 +169,7 @@ AAAAAAAAAAAAAAAAAAAAAAAA4KnxPwEGANAAf3k3nCL1AAAAAElFTkSuQmCC" transform="matrix(
         <clipPath id="screen-lid">
             <rect height="268" width="429" x="124" y="38.5" />
         </clipPath>
-        <image xlink:href="http://placehold.it/430x270" x="124" y="38.5" height="268" width="429" clip-path="url(#screen-lid)"></image>
+        <image xlink:href="/img/sublime.jpg" x="124" y="38.5" height="268" width="429" clip-path="url(#screen-lid)"></image>
         <ellipse id="Camera" fill="#232323" stroke="#FFFFFF" stroke-miterlimit="10" cx="338.917" cy="28.935" rx="3.25" ry="3.018" />
     </g>
     <g id="Keyboard_et">
