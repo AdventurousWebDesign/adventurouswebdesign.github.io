@@ -23,8 +23,8 @@
           {% include {{page.header}} %}
         <div class="tm-container">
         {% endif %}
-        {% if page.container != false %}<div id="content" class="uk-container uk-container-center">{% endif %}
-            {{ content }}
+        {% if page.container != false %}<div id="content" class="uk-container uk-container-center uk-margin-large-top">{% endif %}
+            {{ content | markdownify }}
         {% if page.container != false %}</div>{% endif %}
         {% if page.header %}
         </div>
