@@ -4,51 +4,20 @@ header: smallHeader.html
 container: true
 ---
 
-## Styleguide
+# The Styleguide
 
 > __William__: “I'm sure we can all pull together, sir.” <br />
 > __Vetinari__: “Oh, I do hope not. Pulling together is the aim of despotism and tyranny. Free men pull in all kinds of directions.” <br />
 > — Terry Pratchett, *The Truth*
 
-The purpose of a styleguide, in this author's opinion, is singular: __to make working on a project easier__.
+The purpose of our styleguide is to make coding together easier. It keeps us on the same path, saving time and energy by defining our team's approach to common problems.
 
-This isn't to the scale of "[elements of style](http://www.amazon.com/The-Elements-Style-Fourth-Edition/dp/020530902X)".
+When we don't need to pull each other away from product features to ask about [branching](#), [nesting](#), [naming](#), etc., we have more focus and creative energy at our own &amp; our partner's disposal.
 
-This isn't a grand, unifying theory of collaborative programming.
+Therefore, the following styleguides / manuals are made available publically:
 
-This is a simple set of habits to be followed, *where you see benefit* to yourself, your co-workers, and – by way of a better product – to the client.
-
-<div class="uk-grid" data-uk-margin="{cls: 'uk-margin-top'}" data-uk-grid-match="{target: 'div > .highlight > pre, div > .uk-article'}">
-  <div class="uk-width-1-2">
-    <div class="uk-panel">
-{% highlight php %}<?
-  $post = get_post_by_id($_GET['page_id']);
-  echo '<h2>' . $post->title . '</h2>';
-    echo '<p>' . $post->post_content . '</p>';
-?>{% endhighlight %}
-    </div>
-  </div>
-  <div class="uk-width-1-2">{% highlight php %}<?php
-  /**
-   * Let @fabpot's Request object handle the low-level stuff
-   * This is a contrived example of using a library for heavy lifting.
-   *
-   * @see http://symfony.com/doc/current/components/http_kernel/introduction.html
-   */
-  $request = Request::createFromGlobals();
-
-  // If the post exists, render it in a lightweight template.
-  if ($page_id = $request->getDigits('page_id')) {
-    $post = get_post_by_id($page_id);
-    echo sprintf(
-      '<h2>%s</h2>' . "\r\n" . '<p>%s</p>';
-      $post->title,
-      $post->description,
-    );
-  } else {
-    // Otherwise, display an informative reason why we can't.
-    throw new NotFoundHttpException(sprintf('Unable to locate a post with the ID "%s".', $request->get('page_id')));
-  }
-?>{% endhighlight %}
-  </div>
-</div>
+* Wordpress theme filestructure
+* Symfony application filestructure
+* HTML, CSS &amp; Pre-Processors
+* PHP
+* Git workflow
