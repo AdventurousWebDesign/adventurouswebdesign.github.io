@@ -7785,7 +7785,7 @@ hr {
   background: #faf9f0;
 }
 .bg-grey-topo {
-  background: linear-gradient(to bottom, #f3f2eb 90%, rgba(250, 249, 240, 0)) fixed, url(https://www.cameronhurd.com/images/topo-map.svg) repeat-x bottom / 480px fixed, #ffffff;
+  background: linear-gradient(to bottom, #f3f2eb 70%, rgba(250, 249, 240, 0)) fixed, url(https://www.cameronhurd.com/images/topo-map.svg) repeat-x bottom / 480px fixed, #ffffff;
 }
 .icon-link i {
   padding-right: 10px;
@@ -7877,6 +7877,7 @@ hr {
   .battle-positions svg {
     min-width: 630px;
     margin-top: -80px;
+    margin-bottom: -85px !important;
     margin-left: -130px;
   }
 }
