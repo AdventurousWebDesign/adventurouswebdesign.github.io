@@ -7888,10 +7888,12 @@ hr {
   transition-delay: 0.2s;
 }
 .battle-positions.uk-scrollspy-inview g#Grant {
-  transition-delay: 0.8s;
+  transition-delay: 0.4s;
+  transition-duration: 1.25s;
 }
 .battle-positions.uk-scrollspy-inview g#Units {
-  transition-delay: 1.2s;
+  transition-delay: 0.6s;
+  transition-duration: 1.5s;
 }
 .battle-positions g#Objective {
   opacity: 1;
