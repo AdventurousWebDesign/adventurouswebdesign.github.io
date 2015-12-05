@@ -7867,6 +7867,24 @@ hr {
     min-width: 630px;
   }
 }
+@media screen and (min-width: 960px) {
+  .battle-positions svg {
+    min-width: 450px;
+    margin-left: -50px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .battle-positions svg {
+    min-width: 630px;
+    margin-top: -80px;
+    margin-left: -130px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .bg-inset-top {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+}
 .battle-positions g#Topo,
 .battle-positions g#Grant,
 .battle-positions g#Water,
