@@ -123,3 +123,32 @@
 
 @media screen and (min-width: @breakpoint-large) { #macbook svg { min-width: 530px; } }
 @media screen and (min-width: @breakpoint-xlarge) { #macbook svg { min-width: 630px; } }
+
+.battle-positions {
+  g#Topo,
+  g#Grant,
+  g#Water,
+  g#Units {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &.uk-scrollspy-inview {
+    g#Topo,
+    g#Grant,
+    g#Water,
+    g#Units {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    g#Topo  { transition-delay: 0.0s; }
+    g#Water { transition-delay: 0.2s; }
+    g#Grant { transition-delay: 0.8s; }
+    g#Units { transition-delay: 1.2s; }
+  }
+
+  g#Objective {
+    opacity: 1;
+  }
+}

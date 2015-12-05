@@ -7867,3 +7867,32 @@ hr {
     min-width: 630px;
   }
 }
+.battle-positions g#Topo,
+.battle-positions g#Grant,
+.battle-positions g#Water,
+.battle-positions g#Units {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.battle-positions.uk-scrollspy-inview g#Topo,
+.battle-positions.uk-scrollspy-inview g#Grant,
+.battle-positions.uk-scrollspy-inview g#Water,
+.battle-positions.uk-scrollspy-inview g#Units {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.battle-positions.uk-scrollspy-inview g#Topo {
+  transition-delay: 0.0s;
+}
+.battle-positions.uk-scrollspy-inview g#Water {
+  transition-delay: 0.2s;
+}
+.battle-positions.uk-scrollspy-inview g#Grant {
+  transition-delay: 0.8s;
+}
+.battle-positions.uk-scrollspy-inview g#Units {
+  transition-delay: 1.2s;
+}
+.battle-positions g#Objective {
+  opacity: 1;
+}
