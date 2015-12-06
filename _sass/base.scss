@@ -1,30 +1,27 @@
-@import "uikit";
-@import "pygment";
-@import "fonts";
-@import "colors";
-@import "typography";
+// @import "uikit";
+// @import "pygment";
 
-@banner-height 	: 550px;
-@tm-white 		: white;
-@tagline-size	: 60px;
+$banner-height:  550px;
+$tm-white:       white;
+$tagline-size:   60px;
 
 .disable-hover, .disable-hover * { pointer-events: none; }
 
 #logo {
-	font-size: (@base-h1-font-size * 1.25);
-	line-height: (@base-h1-font-size * 1.15);
+	font-size: ($base-h1-font-size * 1.25);
+	line-height: ($base-h1-font-size * 1.15);
 }
 
 .italic { font-style: italic; }
 
 .tagline {
-    font-size: @tagline-size;
+    font-size: $tagline-size;
     font-style: italic;
-    margin-bottom: @tagline-size / 2;
+    margin-bottom: $tagline-size / 2;
 }
 
 .bg-grey {
-	background: @grey;
+	background: $grey;
 }
 
 .bg-grey-topo {
@@ -44,7 +41,7 @@
 
 .tm-header-bg {
 	width:100%;
-	height: @banner-height;
+	height: $banner-height;
 	position: fixed;
 	z-index:-100;
 
@@ -53,7 +50,7 @@
 		top:0;
 		left:0;
 		width:100%;
-		height: @banner-height;
+		height: $banner-height;
 		background-repeat:no-repeat;
 		background-size:cover;
 		background-position:center 0;
@@ -71,17 +68,17 @@
 	}
 
 	& + .tm-header-container {
-		height: @banner-height;
-		h1, h2, h3 { color: @tm-white; }
+		height: $banner-height;
+		h1, h2, h3 { color: $tm-white; }
 		#logo .italic {
-			font-size: (@base-h1-font-size * 1.25) - 4px;
+			font-size: ($base-h1-font-size * 1.25) - 4px;
 		}
 	}
 
 }
 
 .tm-header-bg--small, .tm-header-bg--small > div, .tm-header-bg--small + .tm-header-container {
-  height: @banner-height * 0.65;
+  height: $banner-height * 0.65;
 }
 
 .tm-container {
@@ -104,7 +101,7 @@
 	.uk-overlay, img { width: 100%; }
 }
 
-.hook-list-misc() {
+@mixin hook-list-misc() {
 	.uk-list.uk-list-small {
 		font-size: 0.8em;
 	}
@@ -121,17 +118,17 @@
 	}
 }
 
-@media screen and (min-width: @breakpoint-large) { #macbook svg { min-width: 530px; } }
-@media screen and (min-width: @breakpoint-xlarge) { #macbook svg { min-width: 630px; } }
+@media screen and (min-width: $breakpoint-large) { #macbook svg { min-width: 530px; } }
+@media screen and (min-width: $breakpoint-xlarge) { #macbook svg { min-width: 630px; } }
 
-@media screen and (min-width: @breakpoint-large) {
+@media screen and (min-width: $breakpoint-large) {
   .battle-positions svg {
     min-width: 450px;
     margin-left: -50px;
   }
 }
 
-@media screen and (min-width: @breakpoint-xlarge) {
+@media screen and (min-width: $breakpoint-xlarge) {
   .battle-positions svg {
     min-width: 630px;
     margin-top: -80px;
@@ -140,7 +137,7 @@
   }
 }
 
-@media screen and (min-width: @breakpoint-large) {
+@media screen and (min-width: $breakpoint-large) {
   .bg-inset-top {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
   }

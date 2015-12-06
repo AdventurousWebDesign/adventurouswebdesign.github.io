@@ -1,5 +1,5 @@
 a {
-	.font-serif;
+	@extend .font-serif;
 	font-style: italic;
 	text-decoration: underline;
 	font-size: 24px;

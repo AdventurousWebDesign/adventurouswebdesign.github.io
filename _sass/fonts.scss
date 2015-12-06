@@ -3,7 +3,7 @@
   font-weight: 400;
   src: url('/assets/fanwood/fanwood-webfont.eot?') format('eot');
   src: local('☺︎'), url('/assets/fanwood/fanwood-webfont.eot?') format('eot'),
-  	url('/assets/fanwood/fanwood-webfont.woff') format('woff'), 
+  	url('/assets/fanwood/fanwood-webfont.woff') format('woff'),
   	url('/assets/fanwood/fanwood-webfont.otf') format('opentype'),
   	url('/assets/fanwood/fanwood-webfont.ttf') format('truetype'),
   	url('/assets/fanwood/fanwood-webfont.svg#FanwoodRegular') format('svg');
@@ -15,7 +15,7 @@
   font-style: italic;
   src: url('/assets/fanwood/fanwood_italic-webfont.eot?') format('eot');
   src: local('☺︎'), url('/assets/fanwood/fanwood_italic-webfont.eot?') format('eot'),
-  	url('/assets/fanwood/fanwood_italic-webfont.woff') format('woff'), 
+  	url('/assets/fanwood/fanwood_italic-webfont.woff') format('woff'),
   	url('/assets/fanwood/fanwood_italic-webfont.otf') format('opentype'),
   	url('/assets/fanwood/fanwood_italic-webfont.ttf') format('truetype'),
   	url('/assets/fanwood/fanwood_italic-webfont.svg#FanwoodRegular') format('svg');
@@ -34,5 +34,10 @@
   src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 
-.font-sans { font-family: 'Open Sans'; }
-.font-serif { font-family: 'Fanwood'; }
+.font-sans {
+  font-family: 'Open Sans';
+}
+
+.font-serif {
+  font-family: 'Fanwood';
+}
