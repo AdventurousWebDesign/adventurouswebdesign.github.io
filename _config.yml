@@ -1,5 +1,5 @@
 name: Adventurous Web Design
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 exclude: ['node_modules/', 'Gruntfile.js', 'package.json', 'README.md']
