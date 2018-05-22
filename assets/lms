@@ -1,0 +1,1258 @@
+{
+  "version": 1,
+  "width": 195,
+  "height": 56,
+  "duration": 144.418502,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "screen-256color",
+    "SHELL": "/usr/local/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.551704,
+      "\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007\u001b]1337;ShellIntegrationVersion=5;shell=zsh\u0007"
+    ],
+    [
+      0.28375,
+      "\u001b[1m\u001b[3m%\u001b[23m\u001b[1m\u001b[0m                                                                                                                                                                                                  \r \r"
+    ],
+    [
+      0.1e-05,
+      "\u001bk~/Sites/lms\u001b\\"
+    ],
+    [
+      0.070933,
+      "\u001b]133;D;0\u0007\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007"
+    ],
+    [
+      0.044407,
+      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/Sites/lms\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
+    ],
+    [
+      0.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      0.363862,
+      "asciinema rec ~/Desktop/lms"
+    ],
+    [
+      0.24391,
+      "\u001b[27Dclear                      \u001b[22D"
+    ],
+    [
+      0.324156,
+      "\b\b\b\b\bvagrant up"
+    ],
+    [
+      0.339137,
+      "\u001b[10D./src/meijin/bin/run-tests.sh features/quizzes.feature -f=progress"
+    ],
+    [
+      1.023541,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      4.2e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001487,
+      "\u001bk./src/meijin/bin/run-tests.sh\u001b\\"
+    ],
+    [
+      0.8e-05,
+      "\u001b]133;C;\u0007"
+    ],
+    [
+      0.267805,
+      "\u001b[1mFeature:\u001b[22m"
+    ],
+    [
+      0.000241,
+      " Quiz Post Types"
+    ],
+    [
+      0.000286,
+      "\r\n"
+    ],
+    [
+      0.000577,
+      "  In order to test student understanding\r\n"
+    ],
+    [
+      0.0001,
+      "  As a Wordpress/Course administrator\r\n  I need to be able to create quizzes with question data for a lesson\r\n\r\n"
+    ],
+    [
+      0.638562,
+      "  \u001b[1mBackground:\u001b[22m"
+    ],
+    [
+      0.000494,
+      "                                                                      \u001b[30m# features/quizzes.feature:6\u001b[39m"
+    ],
+    [
+      0.000398,
+      "\r\n"
+    ],
+    [
+      1.165716,
+      "    \u001b[32mGiven I have a vanilla wordpress installation\u001b[39m"
+    ],
+    [
+      0.000538,
+      "                                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::installWordPress()\u001b[39m"
+    ],
+    [
+      0.000421,
+      "\r\n"
+    ],
+    [
+      0.001265,
+      "\u001b[32m      | name          | email          | username | password |\r\n      | BDD WordPress | your@email.com | admin    | admin123 |\u001b[39m"
+    ],
+    [
+      0.000169,
+      "\r\n"
+    ],
+    [
+      0.151134,
+      "    \u001b[32mGiven there are plugins\u001b[39m"
+    ],
+    [
+      0.000349,
+      "                                                        \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::thereArePlugins()\u001b[39m"
+    ],
+    [
+      0.000263,
+      "\r\n"
+    ],
+    [
+      0.000762,
+      "\u001b[32m      | plugin           | status  |\r\n      | meijin/index.php | enabled |\u001b[39m"
+    ],
+    [
+      0.000322,
+      "\r\n"
+    ],
+    [
+      0.093783,
+      "    \u001b[32mGiven there are users\u001b[39m"
+    ],
+    [
+      0.000382,
+      "                                                          \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::thereAreUsers()\u001b[39m\r\n"
+    ],
+    [
+      0.000514,
+      "\u001b[32m      | user_nicename | user_pass  | user_login | user_email           | display_name      | role    |\r\n      | student       | student123 | student    | student@example.com  | Stewart Dent      | student |\r\n      | student2      | student124 | student2   | student2@example.com | Scotty Learnswell | student |\u001b[39m"
+    ],
+    [
+      0.000303,
+      "\r\n"
+    ],
+    [
+      0.021687,
+      "    \u001b[32mGiven there are courses\u001b[39m                                                        \u001b[30m# Meijin\\Behat\\Context\\CourseContext::thereAreCourses()\u001b[39m\r\n"
+    ],
+    [
+      0.00024,
+      "\u001b[32m      | title               | content                                 | status  |\r\n      | Eloquent JavaScript | JavaScript is at the heart of almost... | publish |\u001b[39m\r\n"
+    ],
+    [
+      0.035145,
+      "    \u001b[32mGiven there is a quiz called \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\" with questions:\u001b[39m"
+    ],
+    [
+      0.000276,
+      "                   \u001b[30m# Meijin\\Behat\\Context\\QuizContext::iHaveAQuizCalled()\u001b[39m"
+    ],
+    [
+      1.7e-05,
+      "\r\n"
+    ],
+    [
+      0.000534,
+      "\u001b[32m      | question                                  | answers            | correct_answer |\r\n      | Do functions isolate scope in javascript? | true,false,depends | depends        |\r\n      | How many args does Math.random() take?    | 0,1,2              | 0              |\u001b[39m"
+    ],
+    [
+      1.4e-05,
+      "\r\n"
+    ],
+    [
+      0.065191,
+      "    \u001b[32mGiven there are lessons\u001b[39m"
+    ],
+    [
+      0.000261,
+      "                                                        \u001b[30m# Meijin\\Behat\\Context\\LessonContext::thereAreLessons()\u001b[39m"
+    ],
+    [
+      0.000198,
+      "\r\n"
+    ],
+    [
+      0.001222,
+      "\u001b[32m      | title                            | content                                        | status  | course              | quiz          | quiz_enabled |\r\n      | Values, Variables & Control Flow | At the moment, Javascript is in use as...      | publish | Eloquent JavaScript |               | false        |\r\n      | Functions                        | We have already *used* several functions in... | publish | Eloquent JavaScript | Function Quiz | true         |\u001b[39m"
+    ],
+    [
+      0.000133,
+      "\r\n"
+    ],
+    [
+      0.033217,
+      "    \u001b[32mGiven user \"\u001b[39m\u001b[32;1mstudent\u001b[39;22m\u001b[32m\" has access to \"\u001b[39m\u001b[32;1mEloquent JavaScript\u001b[39;22m\u001b[32m\" with status \"\u001b[39m\u001b[32;1mactive\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000446,
+      "  \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::userHasAccessWithStatus()\u001b[39m"
+    ],
+    [
+      0.000256,
+      "\r\n"
+    ],
+    [
+      0.012341,
+      "    \u001b[32mGiven user \"\u001b[39m\u001b[32;1mstudent2\u001b[39;22m\u001b[32m\" has access to \"\u001b[39m\u001b[32;1mEloquent JavaScript\u001b[39;22m\u001b[32m\" with status \"\u001b[39m\u001b[32;1mactive\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000294,
+      " \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::userHasAccessWithStatus()\u001b[39m"
+    ],
+    [
+      0.000127,
+      "\r\n"
+    ],
+    [
+      1.984979,
+      "    \u001b[32mGiven I am logged in as \"\u001b[39m\u001b[32;1madmin\u001b[39;22m\u001b[32m\" with password \"\u001b[39m\u001b[32;1madmin123\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000413,
+      "                       \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::login()\u001b[39m"
+    ],
+    [
+      1.5e-05,
+      "\r\n"
+    ],
+    [
+      0.854712,
+      "    \u001b[32mGiven I enable permalinks\u001b[39m"
+    ],
+    [
+      0.000201,
+      "                                                      \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::iEnablePermalinks()\u001b[39m\r\n"
+    ],
+    [
+      0.01078,
+      "\r\n"
+    ],
+    [
+      0.00029,
+      "  \u001b[1mScenario:\u001b[22m"
+    ],
+    [
+      0.000706,
+      " Admin creates a new lesson, can't make a quiz before it's published"
+    ],
+    [
+      0.000172,
+      " \u001b[30m# features/quizzes.feature:33\u001b[39m\r\n"
+    ],
+    [
+      0.193363,
+      "    \u001b[32mAnd I follow \"\u001b[39m\u001b[32;1mNew Lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.002688,
+      "                                                   \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m\r\n"
+    ],
+    [
+      0.107472,
+      "    \u001b[32mThen I should not see a \"\u001b[39m\u001b[32;1mQuiz\u001b[39;22m\u001b[32m\" element\u001b[39m"
+    ],
+    [
+      0.000457,
+      "                                      \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertElementNotOnPage()\u001b[39m\r\n"
+    ],
+    [
+      0.009943,
+      "\r\n"
+    ],
+    [
+      0.0312,
+      "  \u001b[1mScenario:\u001b[22m"
+    ],
+    [
+      0.000209,
+      " Admin creates a new lesson, saves it, and then creates a quiz"
+    ],
+    [
+      0.000622,
+      "                                 \u001b[30m# features/quizzes.feature:37\u001b[39m"
+    ],
+    [
+      0.000185,
+      "\r\n"
+    ],
+    [
+      1.099541,
+      "    \u001b[32mGiven I have a course called \"\u001b[39m\u001b[32;1mLearn Flamenco Guitar\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000372,
+      "                                                  \u001b[30m# Meijin\\Behat\\Context\\CourseContext::iHaveACourseCalled()\u001b[39m"
+    ],
+    [
+      0.000289,
+      "\r\n"
+    ],
+    [
+      0.039476,
+      "    \u001b[32mAnd I follow \"\u001b[39m\u001b[32;1mNew Lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.001073,
+      "                                                                             \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m\r\n"
+    ],
+    [
+      0.011844,
+      "    \u001b[32mThen I should not see a \"\u001b[39m\u001b[32;1mQuiz\u001b[39;22m\u001b[32m\" element\u001b[39m"
+    ],
+    [
+      0.00024,
+      "                                                                \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertElementNotOnPage()\u001b[39m"
+    ],
+    [
+      0.5e-05,
+      "\r\n"
+    ],
+    [
+      0.032482,
+      "    \u001b[32mWhen I fill in \"\u001b[39m\u001b[32;1mpost_title\u001b[39;22m\u001b[32m\" with \"\u001b[39m\u001b[32;1mIntroduction to Flamenco\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000683,
+      "                                           \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::fillField()\u001b[39m\r\n"
+    ],
+    [
+      0.022883,
+      "    \u001b[32mAnd I fill in \"\u001b[39m\u001b[32;1mcontent\u001b[39;22m\u001b[32m\" with \"\u001b[39m\u001b[32;1mA lot of people confuse this type of guitar playing for a pink bird\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000287,
+      "    \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::fillField()\u001b[39m"
+    ],
+    [
+      0.000104,
+      "\r\n"
+    ],
+    [
+      0.054031,
+      "    \u001b[32mAnd I select \"\u001b[39m\u001b[32;1mLearn Flamenco Guitar\u001b[39;22m\u001b[32m\" from \"\u001b[39m\u001b[32;1mparent_id\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000668,
+      "                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::selectOption()\u001b[39m\r\n"
+    ],
+    [
+      0.283996,
+      "    \u001b[32mAnd I press \"\u001b[39m\u001b[32;1mPublish\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000861,
+      "                                                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::pressButton()\u001b[39m\r\n"
+    ],
+    [
+      0.009879,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mQuiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000555,
+      "                                                                              \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.011817,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mNo quiz defined for this lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000433,
+      "                                                    \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000157,
+      "\r\n"
+    ],
+    [
+      0.193383,
+      "    \u001b[32mWhen I follow \"\u001b[39m\u001b[32;1mCreate a quiz for this lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000349,
+      "                                                         \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m"
+    ],
+    [
+      0.000205,
+      "\r\n"
+    ],
+    [
+      0.00899,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mAdd New Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000496,
+      "                                                                      \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000155,
+      "\r\n"
+    ],
+    [
+      0.050235,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1mLearn Flamenco Guitar » Introduction to Flamenco\u001b[39;22m\u001b[32m\" option from \"\u001b[39m\u001b[32;1mparent_id\u001b[39;22m\u001b[32m\" should be selected\u001b[39m"
+    ],
+    [
+      0.000628,
+      " \u001b[30m# Meijin\\Behat\\Context\\MinkExtraContext::theOptionFromShouldBeSelected()\u001b[39m\r\n"
+    ],
+    [
+      0.000918,
+      "\r\n"
+    ],
+    [
+      0.027258,
+      "  \u001b[1mScenario:\u001b[22m Admin makes a new quiz for a lesson that doesn't have a quiz"
+    ],
+    [
+      0.000431,
+      "                                         \u001b[30m# features/quizzes.feature:51\u001b[39m"
+    ],
+    [
+      0.000301,
+      "\r\n"
+    ],
+    [
+      1.928079,
+      "    \u001b[32mAnd I edit the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mValues, Variables & Control Flow\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000279,
+      "                                                     \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iEditThePost()\u001b[39m"
+    ],
+    [
+      0.000123,
+      "\r\n"
+    ],
+    [
+      0.000405,
+      "      │ Visit: /wp-admin/post.php?post=7&action=edit\r\n"
+    ],
+    [
+      0.008251,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mNo quiz defined for this lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000574,
+      "                                                          \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.6e-05,
+      "\r\n"
+    ],
+    [
+      0.009404,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mCreate a quiz for this lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000249,
+      "                                                             \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000183,
+      "\r\n"
+    ],
+    [
+      0.190169,
+      "    \u001b[32mWhen I follow \"\u001b[39m\u001b[32;1mCreate a quiz for this lesson\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.00023,
+      "                                                                \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m"
+    ],
+    [
+      0.000362,
+      "\r\n"
+    ],
+    [
+      0.00751,
+      "    \u001b[32mAnd I see the current url\u001b[39m"
+    ],
+    [
+      0.000292,
+      "                                                                                    \u001b[30m# Meijin\\Behat\\Context\\MinkExtraContext::iSeeTheCurrentUrl()\u001b[39m"
+    ],
+    [
+      0.000403,
+      "\r\n"
+    ],
+    [
+      0.000646,
+      "      │ http://lms.local/wp-admin/post-new.php?post_type=meijin_quiz&lesson=7\r\n"
+    ],
+    [
+      0.054015,
+      "    \u001b[32mThen the \"\u001b[39m\u001b[32;1mEloquent JavaScript » Values, Variables & Control Flow\u001b[39;22m\u001b[32m\" option from \"\u001b[39m\u001b[32;1mparent_id\u001b[39;22m\u001b[32m\" should be selected\u001b[39m"
+    ],
+    [
+      0.000197,
+      " \u001b[30m# Meijin\\Behat\\Context\\MinkExtraContext::theOptionFromShouldBeSelected()\u001b[39m"
+    ],
+    [
+      0.000289,
+      "\r\n"
+    ],
+    [
+      0.025314,
+      "    \u001b[32mWhen I fill in \"\u001b[39m\u001b[32;1mpost_title\u001b[39;22m\u001b[32m\" with \"\u001b[39m\u001b[32;1mTest Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000312,
+      "                                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::fillField()\u001b[39m"
+    ],
+    [
+      0.000234,
+      "\r\n"
+    ],
+    [
+      0.024491,
+      "    \u001b[32mAnd I fill in \"\u001b[39m\u001b[32;1mcontent\u001b[39;22m\u001b[32m\" with \"\u001b[39m\u001b[32;1mtest quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000278,
+      "                                                                     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::fillField()\u001b[39m"
+    ],
+    [
+      0.000226,
+      "\r\n"
+    ],
+    [
+      0.787341,
+      "    \u001b[32mAnd I press \"\u001b[39m\u001b[32;1mPublish\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000304,
+      "                                                                                        \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::pressButton()\u001b[39m"
+    ],
+    [
+      0.000384,
+      "\r\n"
+    ],
+    [
+      0.005255,
+      "    \u001b[32mThen I should be on \"\u001b[39m\u001b[32;1m/wp-admin/post.php\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000312,
+      "                                                                     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageAddress()\u001b[39m"
+    ],
+    [
+      0.000167,
+      "\r\n"
+    ],
+    [
+      0.007893,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mQuiz published\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000244,
+      "                                                                            \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000184,
+      "\r\n"
+    ],
+    [
+      0.143298,
+      "    \u001b[32mWhen I follow \"\u001b[39m\u001b[32;1mAll Quizzes\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000274,
+      "                                                                                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m"
+    ],
+    [
+      0.000293,
+      "\r\n"
+    ],
+    [
+      0.006781,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mTest Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000293,
+      "                                                                                \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.00011,
+      "\r\n"
+    ],
+    [
+      0.121847,
+      "    \u001b[32mWhen I am on the \u001b[39m\u001b[32;1mquiz\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mTest Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000745,
+      "                                                                            \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iAmOnThePost()\u001b[39m"
+    ],
+    [
+      0.000364,
+      "\r\n      │ Visit: http://lms.local/?meijin_quiz=test-quiz\r\n"
+    ],
+    [
+      0.007771,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mValues, Variables & Control Flow\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000464,
+      "                                                         \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.008555,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mEloquent JavaScript\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000742,
+      "                                                                       \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.00685,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mTest Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000364,
+      "                                                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.000952,
+      "\r\n"
+    ],
+    [
+      0.032664,
+      "  \u001b[1mScenario:\u001b[22m Admin enables/disables a quiz for a lesson"
+    ],
+    [
+      0.000218,
+      " \u001b[30m# features/quizzes.feature:70\u001b[39m\r\n"
+    ],
+    [
+      2.332292,
+      "    \u001b[32mAnd I am on the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000657,
+      "                 \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iAmOnThePost()\u001b[39m"
+    ],
+    [
+      0.00029,
+      "\r\n      │ Visit: http://lms.local/?meijin_lesson=functions\r\n"
+    ],
+    [
+      0.009357,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.007314,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mTake Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000432,
+      "                       \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.134053,
+      "    \u001b[32mGiven I edit the \u001b[39m\u001b[32;1mpost\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000197,
+      "                  \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iEditThePost()\u001b[39m"
+    ],
+    [
+      0.000135,
+      "\r\n"
+    ],
+    [
+      0.000409,
+      "      │ Visit: /wp-admin/post.php?post=8&action=edit"
+    ],
+    [
+      0.000291,
+      "\r\n"
+    ],
+    [
+      0.028084,
+      "    \u001b[32mAnd I uncheck \"\u001b[39m\u001b[32;1m_meijin_lesson_quiz_enabled\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.00057,
+      "        \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::uncheckOption()\u001b[39m\r\n"
+    ],
+    [
+      0.281755,
+      "    \u001b[32mAnd I press \"\u001b[39m\u001b[32;1mUpdate\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.001822,
+      "                               \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::pressButton()\u001b[39m\r\n"
+    ],
+    [
+      0.094765,
+      "    \u001b[32mWhen I am on the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000253,
+      "                \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iAmOnThePost()\u001b[39m"
+    ],
+    [
+      0.00053,
+      "\r\n"
+    ],
+    [
+      0.00021,
+      "      │ Visit: http://lms.local/?meijin_lesson=functions\r\n"
+    ],
+    [
+      0.006145,
+      "    \u001b[32mThen I should not see \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000452,
+      "              \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageNotContainsText()\u001b[39m"
+    ],
+    [
+      1.5,
+      "\r\n"
+    ],
+    [
+      0.013534,
+      "    \u001b[32mAnd I should not see \"\u001b[39m\u001b[32;1mTake Quiz\u001b[39;22m\u001b[32m\"\u001b[39m                   \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageNotContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.6743,
+      "    \u001b[32mGiven I edit the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000979,
+      "                \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iEditThePost()\u001b[39m\r\n      │ Visit: /wp-admin/post.php?post=8&action=edit\r\n"
+    ],
+    [
+      0.024568,
+      "    \u001b[32mAnd I check \"\u001b[39m\u001b[32;1m_meijin_lesson_quiz_enabled\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000356,
+      "          \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::checkOption()\u001b[39m"
+    ],
+    [
+      0.000231,
+      "\r\n"
+    ],
+    [
+      0.265079,
+      "    \u001b[32mAnd I press \"\u001b[39m\u001b[32;1mUpdate\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000405,
+      "                               \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::pressButton()\u001b[39m"
+    ],
+    [
+      0.000309,
+      "\r\n"
+    ],
+    [
+      0.119457,
+      "    \u001b[32mWhen I am on the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000306,
+      "                \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iAmOnThePost()\u001b[39m"
+    ],
+    [
+      0.000147,
+      "\r\n"
+    ],
+    [
+      0.00028,
+      "      │ Visit: http://lms.local/?meijin_lesson=functions"
+    ],
+    [
+      0.000266,
+      "\r\n"
+    ],
+    [
+      0.00821,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000567,
+      "                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000525,
+      "\r\n"
+    ],
+    [
+      0.00666,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mTake Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000433,
+      "                       \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000169,
+      "\r\n"
+    ],
+    [
+      0.000987,
+      "\r\n"
+    ],
+    [
+      0.034008,
+      "  \u001b[1mScenario:\u001b[22m"
+    ],
+    [
+      0.000274,
+      " Admin confirm the quiz questions, choices, and answers are displaying in the metabox"
+    ],
+    [
+      0.00048,
+      "                  \u001b[30m# features/quizzes.feature:90\u001b[39m"
+    ],
+    [
+      0.000264,
+      "\r\n"
+    ],
+    [
+      1.603738,
+      "    \u001b[32mGiven I edit the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.00041,
+      "                                                                           \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iEditThePost()\u001b[39m"
+    ],
+    [
+      0.000402,
+      "\r\n"
+    ],
+    [
+      0.000255,
+      "      │ Visit: /wp-admin/post.php?post=8&action=edit\r\n"
+    ],
+    [
+      0.008975,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000501,
+      "                                                                             \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000115,
+      "\r\n"
+    ],
+    [
+      0.16139,
+      "    \u001b[32mWhen I follow \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000555,
+      "                                                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m"
+    ],
+    [
+      0.000335,
+      "\r\n"
+    ],
+    [
+      0.06107,
+      "    \u001b[32mThen the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_question\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mDo functions isolate scope in javascript?\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000337,
+      " \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.000245,
+      "\r\n"
+    ],
+    [
+      0.068097,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_0_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mtrue\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000735,
+      "                               \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m\r\n"
+    ],
+    [
+      0.06029,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_1_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mfalse\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000838,
+      "                              \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m\r\n"
+    ],
+    [
+      0.061419,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_2_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mdepends\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000304,
+      "                            \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.000391,
+      "\r\n"
+    ],
+    [
+      0.034734,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_0_correct\u001b[39;22m\u001b[32m\" checkbox should not be checked\u001b[39m"
+    ],
+    [
+      0.000288,
+      "                           \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxNotChecked()\u001b[39m"
+    ],
+    [
+      0.000125,
+      "\r\n"
+    ],
+    [
+      0.035042,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_1_correct\u001b[39;22m\u001b[32m\" checkbox should not be checked\u001b[39m"
+    ],
+    [
+      0.000632,
+      "                           \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxNotChecked()\u001b[39m"
+    ],
+    [
+      8.2e-05,
+      "\r\n"
+    ],
+    [
+      0.038396,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_0_answers_2_correct\u001b[39;22m\u001b[32m\" checkbox should be checked\u001b[39m"
+    ],
+    [
+      8.8e-05,
+      "                               \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxChecked()\u001b[39m"
+    ],
+    [
+      0.000146,
+      "\r\n"
+    ],
+    [
+      0.064689,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_question\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mHow many args does Math.random() take?\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000297,
+      "     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.000276,
+      "\r\n"
+    ],
+    [
+      0.056055,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_0_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1m0\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.00025,
+      "                                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.000153,
+      "\r\n"
+    ],
+    [
+      0.053397,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_1_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1m1\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000223,
+      "                                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.000383,
+      "\r\n"
+    ],
+    [
+      0.064348,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_2_answer\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1m2\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000485,
+      "                                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m"
+    ],
+    [
+      0.00021,
+      "\r\n"
+    ],
+    [
+      0.032326,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_0_correct\u001b[39;22m\u001b[32m\" checkbox should be checked\u001b[39m"
+    ],
+    [
+      0.000276,
+      "                               \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxChecked()\u001b[39m"
+    ],
+    [
+      0.000323,
+      "\r\n"
+    ],
+    [
+      0.034287,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_1_correct\u001b[39;22m\u001b[32m\" checkbox should not be checked\u001b[39m"
+    ],
+    [
+      0.000554,
+      "                           \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxNotChecked()\u001b[39m"
+    ],
+    [
+      0.000426,
+      "\r\n"
+    ],
+    [
+      0.031364,
+      "    \u001b[32mAnd the \"\u001b[39m\u001b[32;1m_meijin_quiz_questions_1_answers_2_correct\u001b[39;22m\u001b[32m\" checkbox should not be checked\u001b[39m"
+    ],
+    [
+      0.00035,
+      "                           \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertCheckboxNotChecked()\u001b[39m"
+    ],
+    [
+      0.0003,
+      "\r\n"
+    ],
+    [
+      0.000695,
+      "\r\n"
+    ],
+    [
+      0.030866,
+      "  \u001b[1mScenario:\u001b[22m Admin adds a \"celebration\" image for the quiz; it persists"
+    ],
+    [
+      1.2e-05,
+      "                                            \u001b[30m# features/quizzes.feature:110\u001b[39m\r\n"
+    ],
+    [
+      1.901763,
+      "    \u001b[32mGiven I edit the \u001b[39m\u001b[32;1mquiz\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunction Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.5e-05,
+      "                                                                         \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iEditThePost()\u001b[39m"
+    ],
+    [
+      0.000125,
+      "\r\n"
+    ],
+    [
+      0.000229,
+      "      │ Visit: /wp-admin/post.php?post=6&action=edit"
+    ],
+    [
+      0.000238,
+      "\r\n"
+    ],
+    [
+      0.010043,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mCelebration Image URL\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000475,
+      "                                                                     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.036261,
+      "    \u001b[32mAnd I fill in \"\u001b[39m\u001b[32;1mCelebration Image URL\u001b[39;22m\u001b[32m\" with \"\u001b[39m\u001b[32;1mhttps://media.giphy.com/media/2alKkyRFPKRSU/giphy.gif\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000211,
+      "            \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::fillField()\u001b[39m"
+    ],
+    [
+      0.000188,
+      "\r\n"
+    ],
+    [
+      0.270241,
+      "    \u001b[32mAnd I press \"\u001b[39m\u001b[32;1mUpdate\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000217,
+      "                                                                                          \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::pressButton()\u001b[39m"
+    ],
+    [
+      0.000273,
+      "\r\n"
+    ],
+    [
+      0.063056,
+      "    \u001b[32mThen the \"\u001b[39m\u001b[32;1mCelebration Image URL\u001b[39;22m\u001b[32m\" field should contain \"\u001b[39m\u001b[32;1mhttps://media.giphy.com/media/2alKkyRFPKRSU/giphy.gif\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000461,
+      " \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertFieldContains()\u001b[39m\r\n"
+    ],
+    [
+      0.001449,
+      "\r\n"
+    ],
+    [
+      0.028238,
+      "  \u001b[1mScenario:\u001b[22m"
+    ],
+    [
+      0.000389,
+      " Access a quiz as user"
+    ],
+    [
+      0.000935,
+      "                                                 \u001b[30m# features/quizzes.feature:117\u001b[39m"
+    ],
+    [
+      0.000598,
+      "\r\n"
+    ],
+    [
+      1.856971,
+      "    \u001b[32mGiven user \"\u001b[39m\u001b[32;1mstudent\u001b[39;22m\u001b[32m\" has access to \"\u001b[39m\u001b[32;1mEloquent JavaScript\u001b[39;22m\u001b[32m\" with status \"\u001b[39m\u001b[32;1mactive\u001b[39;22m\u001b[32m\"\u001b[39m \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::userHasAccessWithStatus()\u001b[39m\r\n"
+    ],
+    [
+      0.221017,
+      "    \u001b[32mGiven I am logged in as \"\u001b[39m\u001b[32;1mstudent\u001b[39;22m\u001b[32m\" with password \"\u001b[39m\u001b[32;1mstudent123\u001b[39;22m\u001b[32m\"\u001b[39m                  \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::login()\u001b[39m\r\n"
+    ],
+    [
+      0.097963,
+      "    \u001b[32mWhen I am on the \u001b[39m\u001b[32;1mlesson\u001b[39;22m\u001b[32m \"\u001b[39m\u001b[32;1mFunctions\u001b[39;22m\u001b[32m\"\u001b[39m                                           \u001b[30m# Meijin\\Behat\\Context\\MeijinContext::iAmOnThePost()\u001b[39m\r\n"
+    ],
+    [
+      0.000242,
+      "      │ Visit: http://lms.local/?meijin_lesson=functions\r\n"
+    ],
+    [
+      0.013784,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mTake Quiz\u001b[39;22m\u001b[32m\"\u001b[39m                                                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.088607,
+      "    \u001b[32mWhen I follow \"\u001b[39m\u001b[32;1mTake Quiz\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.0003,
+      "                                                     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::clickLink()\u001b[39m"
+    ],
+    [
+      0.000384,
+      "\r\n"
+    ],
+    [
+      0.005284,
+      "    \u001b[32mThen I see the current url\u001b[39m"
+    ],
+    [
+      0.000254,
+      "                                                    \u001b[30m# Meijin\\Behat\\Context\\MinkExtraContext::iSeeTheCurrentUrl()\u001b[39m"
+    ],
+    [
+      0.000128,
+      "\r\n"
+    ],
+    [
+      0.000284,
+      "      │ http://lms.local/quiz/function-quiz/\r\n"
+    ],
+    [
+      0.005523,
+      "    \u001b[32mThen I should see \"\u001b[39m\u001b[32;1mDo functions isolate scope in javascript?\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000342,
+      "                 \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m\r\n"
+    ],
+    [
+      0.008169,
+      "    \u001b[32mAnd I should see \"\u001b[39m\u001b[32;1mHow many args does Math.random() take?\u001b[39;22m\u001b[32m\"\u001b[39m"
+    ],
+    [
+      0.000275,
+      "                     \u001b[30m# Tmf\\WordPressExtension\\Context\\WordPressContext::assertPageContainsText()\u001b[39m"
+    ],
+    [
+      0.000298,
+      "\r\n"
+    ],
+    [
+      0.00091,
+      "\r\n"
+    ],
+    [
+      0.0434,
+      "7 scenarios"
+    ],
+    [
+      0.000793,
+      " (\u001b[32m7 passed\u001b[39m)\r\n"
+    ],
+    [
+      0.000547,
+      "146 steps (\u001b[32m146 passed\u001b[39m)"
+    ],
+    [
+      0.000253,
+      "\r\n"
+    ],
+    [
+      0.0002,
+      "2m13.13s (50.81Mb)\r\n"
+    ],
+    [
+      0.069262,
+      "\u001b[1m\u001b[3m%\u001b[23m\u001b[1m\u001b[0m                                                                                                                                                                                                  \r \r"
+    ],
+    [
+      0.000161,
+      "\u001bk~/Sites/lms\u001b\\"
+    ],
+    [
+      0.063065,
+      "\u001b]133;D;0\u0007\u001b]1337;RemoteHost=Cam@cambook.local\u0007"
+    ],
+    [
+      0.7e-05,
+      "\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007"
+    ],
+    [
+      0.076956,
+      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/Sites/lms\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
+    ],
+    [
+      0.3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.4e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.736799,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}
