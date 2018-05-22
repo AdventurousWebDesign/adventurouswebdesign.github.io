@@ -67,7 +67,7 @@ gulp.task('sassc', function () {
 // Watch files
 gulp.task('watch', function () {
   gulp.watch(globalConfig.js + '/*.js', ['scripts']);
-  gulp.watch([globalConfig.sass + '/*.scss', 'css/*'], ['sassc']);
+  gulp.watch([globalConfig.sass + '/*.scss', 'css/adventurous.scss'], ['sassc']);
 });
 
 // Default task

@@ -1,5 +1,6 @@
-name: Adventurous Web Design
-markdown: kramdown
+name:        Adventurous Web Design
+markdown:    kramdown
 highlighter: rouge
 
-exclude: ['node_modules/', 'Gruntfile.js', 'package.json', 'README.md']
+
+exclude:     ['css/adventurous.scss', 'node_modules/', 'Gruntfile.js', 'package.json', 'README.md']
