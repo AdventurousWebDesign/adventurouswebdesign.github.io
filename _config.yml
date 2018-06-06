@@ -2,5 +2,9 @@ name:        Adventurous Web Design
 markdown:    kramdown
 highlighter: rouge
 
+collections:
+  work:
+    output:    true
+    permalink: /:collection/:slug
 
 exclude:     ['css/adventurous.scss', 'node_modules/', 'Gruntfile.js', 'package.json', 'README.md']
