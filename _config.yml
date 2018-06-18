@@ -7,4 +7,20 @@ collections:
     output:    true
     permalink: /:collection/:slug
 
-exclude:     ['css/adventurous.scss', 'node_modules/', 'Gruntfile.js', 'package.json', 'README.md']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _src
+  - _images
+  - LICENSE
+  - package.json
+  - README.md
+  - webpack.config.js
+  - yarn-error.log
+  - yarn.lock
+  - config
+  - optimization-fix
+  - optimization-fix-this-file-is-ignored.js
+  - icon.png

@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "Making Websites.",
   "main": "adventurous.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/AdventurousWebDesign/adventurouswebdesign.github.io"
+  },
+  "scripts": {
+    "start:dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"docker-compose up\""
   },
   "author": "Cameron Hurd",
   "license": "WTFPL",
@@ -14,21 +18,31 @@
   },
   "homepage": "https://github.com/AdventurousWebDesign/adventurouswebdesign.github.io",
   "devDependencies": {
-    "uikit": "^2.23.0",
-    "gulp": "~3.8.11",
-    "gulp-concat": "2.5.2",
-    "gulp-svgmin": "^1.1.1",
-    "gulp-svgstore": "^5.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.1.0",
-    "gulp-run": "^1.6.12",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-util": "^3.0.7",
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.11",
+    "es6-promise": "^3.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass": "^1.5.1",
+    "style-loader": "^0.21.0",
     "vinyl-buffer": "^1.0.0",
-    "es6-promise": "^3.0.2"
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "npm": "^6.0.1"
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "npm": "^6.0.1",
+    "sass-loader": "^7.0.3",
+    "webpack": "^4.11.1",
+    "webpack-merge": "^4.1.2",
+    "uikit": "^2.23.0"
   }
 }
