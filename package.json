@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start:dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll build -w\"",
+    "jekyll:build": "jekyll build",
     "webpack": "webpack-dev-server --env=dev"
   },
   "author": "Cameron Hurd",

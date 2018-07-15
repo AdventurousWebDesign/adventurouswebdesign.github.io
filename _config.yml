@@ -27,6 +27,7 @@ exclude:
   - LICENSE
   - package.json
   - README.md
+  - Session.vim
   - webpack.config.js
   - yarn-error.log
   - yarn.lock
