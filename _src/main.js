@@ -29,8 +29,10 @@
   };
 
   const debouncePointerEvents = () => {
-    TweenMax.killDelayedCallsTo(addPointerEvents);
-    TweenMax.delayedCall(scrollThreshold, addPointerEvents);
+    if (window.TweenMax) {
+      TweenMax.killDelayedCallsTo(addPointerEvents);
+      TweenMax.delayedCall(scrollThreshold, addPointerEvents);
+    }
   };
 
   $window.on('scroll ready', () => {
@@ -50,10 +52,12 @@
         alpha = 1;
       }
 
-      TweenMax.set($bgBlur, { alpha });
-      TweenMax.set($logo, { alpha: 1 - (alpha * 0.8) });
-      $tmHeaders.css('background-position', `center -${scrollTop / 3}}px`);
-      $logo.css('padding-top', `${scrollTop / 2}px`);
+      if (window.TweenMax) {
+        TweenMax.set($bgBlur, { alpha });
+        TweenMax.set($logo, { alpha: 1 - (alpha * 0.8) });
+        $tmHeaders.css('background-position', `center -${scrollTop / 3}}px`);
+        $logo.css('padding-top', `${scrollTop / 2}px`);
+      }
     }
   });
 })(jQuery);

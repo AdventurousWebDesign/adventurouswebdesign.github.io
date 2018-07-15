@@ -1,0 +1,13 @@
+@mixin regular-text {
+    font-family: $base-body-font-family;
+    font-size: $base-body-font-size;
+    font-style: initial;
+    text-decoration: none;
+    color: $base-body-color;
+}
+
+@mixin directive-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}

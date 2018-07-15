@@ -1,0 +1,11 @@
+{::nomarkdown}
+{{ include.before | default: page.image_caption_container_close | default: '</div>' }}
+{:/nomarkdown}
+
+{{ include.image }}
+
+{{ include.caption }}
+
+{::nomarkdown}
+{{ include.after | default: page.image_caption_container_open | default: '<div>' }}
+{:/nomarkdown}

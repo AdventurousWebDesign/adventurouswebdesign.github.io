@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -16,8 +17,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './_src/template/master.html',
       filename: '../_layouts/master.html',
+      alwaysWriteToDisk: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: './_src/template/work.html',
+      filename: '../_layouts/work.html',
+      alwaysWriteToDisk: true,
     }),
     new ExtractTextPlugin('[name].css'),
+    new HtmlWebpackHarddiskPlugin(),
   ],
   module: {
     rules: [

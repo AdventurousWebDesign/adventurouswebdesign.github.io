@@ -9,7 +9,8 @@
     "url": "https://github.com/AdventurousWebDesign/adventurouswebdesign.github.io"
   },
   "scripts": {
-    "start:dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"docker-compose up\""
+    "start:dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll build -w\"",
+    "webpack": "webpack-dev-server --env=dev"
   },
   "author": "Cameron Hurd",
   "license": "WTFPL",
@@ -38,6 +39,7 @@
   "dependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
+    "html-webpack-harddisk-plugin": "^0.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "npm": "^6.0.1",
     "sass-loader": "^7.0.3",

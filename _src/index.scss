@@ -59,8 +59,11 @@
   "../node_modules/uikit/dist/scss/core/print.scss",
 
   // Load ours event laster™ so that it takes precedence
+  "sass/mixins",
   "sass/colors.scss",
   "sass/base.scss",
   "sass/fonts.scss",
-  "sass/typography.scss"
+  "sass/typography.scss",
+  "sass/header",
+  "sass/portfolio"
 ;

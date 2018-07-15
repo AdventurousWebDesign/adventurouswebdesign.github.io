@@ -1,0 +1,17 @@
+<div class="uk-container uk-container-center">
+    <div class="header-nav">
+        <div class="header-nav__logo">
+            <a href="/">{% include logo-dark.svg %}</a>
+        </div>
+
+        <ul class="header-nav__menu">
+            <li class="{% if page.url == '/about-us/' %}active{% endif %}"><a href="/about-us/">About Us</a></li>
+            <li class="{% if page.url contains '/work/' %}active{% endif %}"><a href="/work/">Our Work</a></li>
+            <li class="{% if page.url contains '/blog/' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+        </ul>
+
+        <div class="header-nav__cta">
+            <a class="button button--shadow button--light" href="#">Work Together</a>
+        </div>
+    </div>
+</div>
