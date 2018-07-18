@@ -1,0 +1,37 @@
+.quote {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.quote__body {
+  border-left: 2px solid #858585;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.quote__meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__avatar {
+  border-radius: 100%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.quote__attribution {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #999;
+  font-style: normal;
+}

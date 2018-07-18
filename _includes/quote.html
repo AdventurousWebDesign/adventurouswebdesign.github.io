@@ -1,0 +1,24 @@
+<div class="quote">
+  <blockquote class="quote__body">{{ include.body }}</blockquote>
+  <div class="quote__meta">
+    {% if include.avatar != '' %}
+    <div class="quote__avatar">
+      <img src="{{ include.avatar }}" alt="Photo for {{ indlude.person }}" />
+    </div>
+    {% endif %}
+    <cite class="quote__attribution">
+      {{ include.person }}, {{ include.position }} of {{ include.company }}
+    </cite>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Quotation",
+  "creator": {
+    "@type": "Person",
+    "name": "{{ include.person }}"
+  },
+  "text": "{{ include.body | strip | strip_newlines }}"
+}
+</script>

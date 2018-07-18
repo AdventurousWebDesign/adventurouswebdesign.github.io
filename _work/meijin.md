@@ -26,6 +26,20 @@ appeal, the only way to "have it all" would be to build from scratch!
 
 {% include image_aside_macbook.html image=image-src caption=image-caption %}
 
+{% capture quote-body %}
+We were looking for a very specific LMS that needed to satisfy our students, our
+coaches, and ourselves. Cameron and Adventurous Web Design came through for us
+and helped craft an education experience that's had a positive impacts on
+hundreds of people! We've served up X seasons of courses and counting, and it's
+been a joy.
+{% endcapture %}
+
+{% include quote.html
+  body=quote-body avatar="/assets/images/meghan-telpner.jpg"
+  person="Meghan Telpner" position="Founder"
+  company="The Academy of Culinary Nutrition"
+%}
+
 We started translating the standard LMS user flows into prototypes. Extending
 beyond the basic LMS feature set to cover the ACN's specific needs. Meghan and
 her team already had a well-worn map of their students' and experts'
