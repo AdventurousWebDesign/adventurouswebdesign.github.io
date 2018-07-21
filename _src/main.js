@@ -1,5 +1,7 @@
 /* global window TweenMax jQuery:true */
 
+import Viewer from 'viewerjs';
+
 (($) => {
   /*
   http://bassta.bg/2013/12/medium-com-like-blurred-header-effect/
@@ -59,5 +61,20 @@
         $logo.css('padding-top', `${scrollTop / 2}px`);
       }
     }
+  });
+
+  // Viewer Options
+  const vOpts = {
+    navbar: false,
+    toolbar: false,
+    movable: false,
+    rotatable: false,
+    scalable: false,
+    fullscreen: false,
+  };
+
+  $.each($('.image-gallery'), (i, el) => {
+    const viewer = new Viewer(el, vOpts);
+    viewer.initViewer();
   });
 })(jQuery);

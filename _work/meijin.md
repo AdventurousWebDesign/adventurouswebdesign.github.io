@@ -45,6 +45,8 @@ beyond the basic LMS feature set to cover the ACN's specific needs. Meghan and
 her team already had a well-worn map of their students' and experts'
 pain-points.
 
+{% include gallery.html pics="placeholder.png~My Pic|placeholder.png~My Next Pic|placeholder.png" %}
+
 Serving the goal of reliability, we designed our code in a way that's commonly
 out of scope/budget/left-field for WordPress projects. The configuration and
 plugin ecosystems are not hospitipal to checking stability between the various
