@@ -1,7 +1,7 @@
 {
   "version": 1,
   "width": 195,
-  "height": 56,
+  "height": 20,
   "duration": 144.418502,
   "command": null,
   "title": null,
@@ -12,7 +12,7 @@
   "stdout": [
     [
       0.551704,
-      "\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007\u001b]1337;ShellIntegrationVersion=5;shell=zsh\u0007"
+      "\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/meijin\u0007\u001b]1337;ShellIntegrationVersion=5;shell=zsh\u0007"
     ],
     [
       0.28375,
@@ -20,15 +20,15 @@
     ],
     [
       0.1e-05,
-      "\u001bk~/Sites/lms\u001b\\"
+      "\u001bk~/meijin\u001b\\"
     ],
     [
       0.070933,
-      "\u001b]133;D;0\u0007\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007"
+      "\u001b]133;D;0\u0007\u001b]1337;RemoteHost=Cam@cambook.local\u0007\u001b]1337;CurrentDir=/Users/Cam/meijin\u0007"
     ],
     [
       0.044407,
-      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/Sites/lms\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
+      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/meijin\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
     ],
     [
       0.6e-05,
@@ -52,7 +52,7 @@
     ],
     [
       0.339137,
-      "\u001b[10D./src/meijin/bin/run-tests.sh features/quizzes.feature -f=progress"
+      "\u001b[10D./src/meijin/bin/run-tests.sh features/quizzes.feature"
     ],
     [
       1.023541,
@@ -63,12 +63,12 @@
       "\u001b[?2004l\r\r\n"
     ],
     [
-      0.001487,
-      "\u001bk./src/meijin/bin/run-tests.sh\u001b\\"
-    ],
-    [
       0.8e-05,
       "\u001b]133;C;\u0007"
+    ],
+    [
+      0.167805,
+      "\u001b]133;C;\u0007\r\n"
     ],
     [
       0.267805,
@@ -1228,7 +1228,7 @@
     ],
     [
       0.000161,
-      "\u001bk~/Sites/lms\u001b\\"
+      "\u001bk~/meijin\u001b\\"
     ],
     [
       0.063065,
@@ -1236,11 +1236,11 @@
     ],
     [
       0.7e-05,
-      "\u001b]1337;CurrentDir=/Users/Cam/Sites/lms\u0007"
+      "\u001b]1337;CurrentDir=/Users/Cam/meijin\u0007"
     ],
     [
       0.076956,
-      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/Sites/lms\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
+      "\r\u001b[0m\u001b[23m\u001b[24m\u001b[J\u001b]133;A\u0007\u001b[32m~/meijin\u001b[00m \u001b[31m‹› \u001b[00m \u001b[33m‹master› \u001b[00m\u001b[00m\u001b[1m$\u001b[0m \u001b]133;B\u0007\u001b[K"
     ],
     [
       0.3e-05,

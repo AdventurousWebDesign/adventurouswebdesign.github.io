@@ -1,0 +1,13 @@
+<div class="terminal">
+  <div class="terminal__menu-bar">
+    <span class="terminal-button close"></span>
+    <span class="terminal-button min"></span>
+    <span class="terminal-button max"></span>
+    <span class="text">
+      {{ include.title | default: '' }}
+    </span>
+  </div>
+  <div class="terminal__body">
+    <asciinema-player src="{{ include.asset }}" poster="{{ include.poster }}" theme="numen"></asciinema-player>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 ---
-title:  Code a Dependable Learning Management System for The Academy of Culinary Nutrition
-slug:   meijin
-tags:   [wordpress, lms, qa, ecommerce, plugin, interoperativity]
+title:     Code a Dependable Learning Management System for The Academy of Culinary Nutrition
+slug:      meijin
+tags:      [wordpress, lms, qa, ecommerce, plugin, interoperativity]
+asciinema: true
 ---
 
 The [Academy of Culinary Nutrition][acn] administers the prestigious Culinary Nutrition
@@ -52,6 +53,8 @@ out of scope/budget/left-field for WordPress projects. The configuration and
 plugin ecosystems are not hospitipal to checking stability between the various
 pieces. We constructed development and QA environments, and built automated
 test-suites that could vouch for each addition and subtraction to our codebase.
+
+{% include terminal.html title="<strong>Meijin LMS</strong> &mdash; Test Suite Sample" asset="/assets/lms" poster="npt:0:4" %}
 
 The new LMS plugin (codename: meijin) was meant to serve not just the ACN site,
 but another web property - meghantelpner.com. To that end, the templating system

@@ -1,0 +1,136 @@
+$term-green: #79C951;
+$term-grey: $base-body-color;
+$term-grey--light: #ABABAB;
+$term-white: #ffffff;
+
+.asciinema-theme-numen .asciinema-terminal {
+  color: $term-grey;                    /* default text color */
+  background-color: $term-white;         /* terminal background color */
+  border-color: transparent;
+}
+.asciinema-theme-numen .fg-bg {    /* inverse for default text color */
+  color: #272822;
+}
+.asciinema-theme-numen .bg-fg {    /* inverse for terminal background color */
+  background-color: #f8f8f2;
+}
+.asciinema-theme-numen .fg-0 {
+  color: #ABABAB;
+}
+.asciinema-theme-numen .bg-0 {
+  background-color: #272822;
+}
+.asciinema-theme-numen .fg-1 {
+  color: #f92672;
+}
+.asciinema-theme-numen .bg-1 {
+  background-color: #f92672;
+}
+.asciinema-theme-numen .fg-2 {
+  color: #a6e22e;
+}
+.asciinema-theme-numen .bg-2 {
+  background-color: #a6e22e;
+}
+.asciinema-theme-numen .fg-3 {
+  color: #f4bf75;
+}
+.asciinema-theme-numen .bg-3 {
+  background-color: #f4bf75;
+}
+.asciinema-theme-numen .fg-4 {
+  color: #66d9ef;
+}
+.asciinema-theme-numen .bg-4 {
+  background-color: #66d9ef;
+}
+.asciinema-theme-numen .fg-5 {
+  color: #ae81ff;
+}
+.asciinema-theme-numen .bg-5 {
+  background-color: #ae81ff;
+}
+.asciinema-theme-numen .fg-6 {
+  color: #a1efe4;
+}
+.asciinema-theme-numen .bg-6 {
+  background-color: #a1efe4;
+}
+.asciinema-theme-numen .fg-7 {
+  color: #f8f8f2;
+}
+.asciinema-theme-numen .bg-7 {
+  background-color: #f8f8f2;
+}
+.asciinema-theme-numen .fg-8 {
+  color: #75715e;
+}
+.asciinema-theme-numen .bg-8 {
+  background-color: #75715e;
+}
+.asciinema-theme-numen .fg-9 {
+  color: #f92672;
+}
+.asciinema-theme-numen .bg-9 {
+  background-color: #f92672;
+}
+.asciinema-theme-numen .fg-10 {
+  color: #a6e22e;
+}
+.asciinema-theme-numen .bg-10 {
+  background-color: #a6e22e;
+}
+.asciinema-theme-numen .fg-11 {
+  color: #f4bf75;
+}
+.asciinema-theme-numen .bg-11 {
+  background-color: #f4bf75;
+}
+.asciinema-theme-numen .fg-12 {
+  color: #66d9ef;
+}
+.asciinema-theme-numen .bg-12 {
+  background-color: #66d9ef;
+}
+.asciinema-theme-numen .fg-13 {
+  color: #ae81ff;
+}
+.asciinema-theme-numen .bg-13 {
+  background-color: #ae81ff;
+}
+.asciinema-theme-numen .fg-14 {
+  color: #a1efe4;
+}
+.asciinema-theme-numen .bg-14 {
+  background-color: #a1efe4;
+}
+.asciinema-theme-numen .fg-15 {
+  color: #f9f8f5;
+}
+.asciinema-theme-numen .bg-15 {
+  background-color: #f9f8f5;
+}
+.asciinema-theme-numen .fg-8,
+.asciinema-theme-numen .fg-9,
+.asciinema-theme-numen .fg-10,
+.asciinema-theme-numen .fg-11,
+.asciinema-theme-numen .fg-12,
+.asciinema-theme-numen .fg-13,
+.asciinema-theme-numen .fg-14,
+.asciinema-theme-numen .fg-15 {
+  font-weight: bold;
+}
+
+.asciinema-theme-numen .control-bar {
+  display: none;
+}
+
+.asciinema-theme-numen .start-prompt .play-button {
+  color: $base-link-color;
+
+  svg polyline,
+  svg polygon {
+    fill: $base-link-color;
+    stroke: $base-link-color;
+  }
+}

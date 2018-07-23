@@ -1,0 +1,31 @@
+.terminal {
+  border: 2px solid $base-heading-color;
+  border-radius: 4px;
+}
+
+.terminal__menu-bar {
+  text-align: center;
+  color: $base-link-color;
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom: 2px solid $base-heading-color;
+  position: relative;
+
+  .terminal-button {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 9px;
+
+    &.close { background-color: #C9872A; }
+    &.min { background-color: #C9BD16; }
+    &.max { background-color: #7ACA52; }
+
+    @for $i from 2 through 3 {
+      &:nth-child(#{$i}) { left: 10px + ((14px + 10px) * ($i - 1)) }
+    }
+  }
+}

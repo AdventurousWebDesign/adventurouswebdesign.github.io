@@ -13,7 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
         <link rel="shortcut icon" href="/favicon.png">
+        {% if '' != page.asciinema %}<link href="/assets/asciinema/ascii.css" rel="stylesheet">{% endif %}
     <link href="/assets/app.css" rel="stylesheet"></head>
+    </head>
     <body class="portfolio">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -42,6 +44,10 @@
         <script type="text/javascript">
             {% include {{ page_specific_script }} %}
         </script>
+        {% endif %}
+
+        {% if '' != page.asciinema %}
+          <script type="text/javascript" src="/assets/asciinema/ascii.js"></script>
         {% endif %}
     <script type="text/javascript" src="/assets/app.bundle.js"></script></body>
 </html>
