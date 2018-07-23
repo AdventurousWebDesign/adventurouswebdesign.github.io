@@ -1,6 +1,7 @@
 /* global window TweenMax jQuery:true */
 
 import Viewer from 'viewerjs';
+import UIKit from 'uikit';
 
 (($) => {
   /*
@@ -77,4 +78,12 @@ import Viewer from 'viewerjs';
     const viewer = new Viewer(el, vOpts);
     viewer.initViewer();
   });
-})(jQuery);
+
+  $.each($('.terminal--autoplay'), (i, el) => {
+    const $el = $(el);
+    UIKit.scrollspy($el);
+
+    $el.on('inview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('play'); });
+    $el.on('outview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('pause'); });
+  });
+})(jQuery, UIKit);
