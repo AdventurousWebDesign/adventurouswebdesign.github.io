@@ -1,7 +1,8 @@
-/* global window TweenMax jQuery:true */
+/* global window jQuery:true */
 
 import Viewer from 'viewerjs';
 import UIKit from 'uikit';
+import TweenMax from 'gsap/TweenMax';
 
 (($) => {
   /*
@@ -64,6 +65,32 @@ import UIKit from 'uikit';
     }
   });
 
+  const $bgBody1 = $('.portfolio-bg--1');
+  const $bgBody2 = $('.portfolio-bg--2');
+
+  $window.on('scroll ready', () => {
+    const scrollTop = $window.scrollTop() + 0.001;
+
+    if (!scrollFlag) {
+      scrollFlag = true;
+      $body.addClass('disable-pointer-events');
+    }
+
+    debouncePointerEvents();
+
+    let offset = scrollTop * -0.2;
+    const opacity = (scrollTop / 1000) + 0.5;
+
+    if (offset > -50) { offset = -50; }
+    if (offset < -500) { offset = -500; }
+
+    if (window.TweenMax) {
+      TweenMax.set($bgBody1, { y: `${(offset / 10)}%` });
+      TweenMax.set($bgBody2, { y: `${(offset / 10) * 0.8}%` });
+      TweenMax.set([$bgBody1, $bgBody2], { opacity });
+    }
+  });
+
   // Viewer Options
   const vOpts = {
     navbar: false,
@@ -86,4 +113,4 @@ import UIKit from 'uikit';
     $el.on('inview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('play'); });
     $el.on('outview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('pause'); });
   });
-})(jQuery, UIKit);
+})(jQuery);
