@@ -56,7 +56,7 @@ test-suites that could vouch for each addition and subtraction to our codebase.
 
 {% include terminal.html title="<strong>Meijin LMS</strong> &mdash; Test Suite Sample" asset="/assets/lms" poster="npt:0:4" %}
 
-The new LMS plugin (codename: meijin) was meant to serve not just the ACN site,
+The new LMS plugin (codename: 名人 Meijin) was meant to serve not just the ACN site,
 but another web property - meghantelpner.com. To that end, the templating system
 was built to be extenadable by any WordPress theme that ran alongside it.
 
@@ -64,5 +64,14 @@ Parallel to the development of the project was documentation. A rich
 feature-set like this one required unambiguous terms and admin & user-facing
 "how-to" material. The documentation was written and published in PDF, and HTML
 format with chapters and built-in search.
+
+### Feature Highlights
+
+<div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin data-uk-grid-match>
+  <div>{% include card.html text="Dropbox integration; helped to seamlessly deliver submissions for Teaching Assistants." img="/assets/images/dropbox.svg" %}</div>
+  <div>{% include card.html text="Template inheritance. No matter the WordPress theme, customization is a cinch." img="/assets/images/layout.svg" %}</div>
+  <div>{% include card.html text="Automated test suite. Each release is checked to ensure that previous features aren't broken!" img="/assets/images/terminal.svg" %}</div>
+  <div>{% include card.html text="Incubated, and delivered with loving attention & care. Meghan is a long-time client upon whom we wish even more success!" img="/assets/images/chicken.svg" %}</div>
+</div>
 
 [acn]: https://culinarynutrition.com
