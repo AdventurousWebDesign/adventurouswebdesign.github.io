@@ -1,0 +1,30 @@
+.footer {
+  background: $contrast-inverted-color;
+  color: $contrast-color;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  font-size: 16px;
+  margin-top: 75px;
+
+  > *         { opacity: 0.8; }
+  &:hover > * { opacity: 1; }
+
+  > *,
+  &:hover > * {
+    transition: opacity .2s ease-in-out;
+  }
+
+  .uk-nav > li > a {
+    font-size: 16px;
+    color: $contrast-color;
+    font-style: normal;
+    font-family: $base-body-font-family;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-skip-ink: auto;
+    }
+  }
+}

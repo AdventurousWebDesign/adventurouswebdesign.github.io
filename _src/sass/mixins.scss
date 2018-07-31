@@ -11,3 +11,7 @@
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
+
+@mixin hook-nav-header {
+    letter-spacing: 2px;
+}

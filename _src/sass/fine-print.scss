@@ -1,0 +1,14 @@
+.fine-print {
+  font-size: 12px;
+  letter-spacing: 1.12px;
+  font-family: $base-body-font-family;
+
+  a {
+    font-size: 10px;
+    letter-spacing: 0.92px;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+  }
+}

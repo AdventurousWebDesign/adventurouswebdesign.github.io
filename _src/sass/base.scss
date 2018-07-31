@@ -213,3 +213,7 @@ $tagline-size:   60px;
       box-shadow: 1px 1px 1px rgba(black, 0.15);
     }
 }
+
+.disable-pointer-events {
+  pointer-events: none;
+}

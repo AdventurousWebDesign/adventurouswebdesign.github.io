@@ -4,6 +4,7 @@
 
   // Set some of our variables up front
   "sass/variables.scss",
+  "sass/mixins",
 
   // Defaults
   "../node_modules/uikit/dist/scss/core/base.scss",
@@ -62,7 +63,6 @@
   "../node_modules/viewerjs/dist/viewer.css",
 
   // Load ours event laster™ so that it takes precedence
-  "sass/mixins",
   "sass/colors.scss",
   "sass/base.scss",
   "sass/fonts.scss",
@@ -73,5 +73,7 @@
   "sass/image-gallery",
   "sass/terminal",
   "sass/asciinema-numen",
-  "sass/card"
+  "sass/card",
+  "sass/footer",
+  "sass/fine-print"
 ;
