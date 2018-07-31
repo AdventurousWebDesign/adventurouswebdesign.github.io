@@ -1,0 +1,20 @@
+.cta-banner {
+  background: $brand-blue;
+  color: #fff;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: bold;
+  margin-top: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.cta-banner + .footer {
+  margin-top: 0;
+}
+
+.cta-banner__button {
+  display: inline-block;
+  margin-top: 20px;
+}

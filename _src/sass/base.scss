@@ -189,6 +189,7 @@ $tagline-size:   60px;
   &:hover {
     color: $base-link-color;
     background-color: rgba($base-link-color, 0.1);
+    text-decoration: none;
   }
 
   &:active {
@@ -212,6 +213,14 @@ $tagline-size:   60px;
     &:active {
       box-shadow: 1px 1px 1px rgba(black, 0.15);
     }
+}
+
+.button--inverted {
+    background-color: #FFF;
+    color: $brand-blue;
+
+    &:hover  { background-color: rgba(#FFF, 0.9); }
+    &:active { background-color: rgba(#FFF, 0.75); }
 }
 
 .disable-pointer-events {

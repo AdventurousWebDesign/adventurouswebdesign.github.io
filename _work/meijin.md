@@ -3,6 +3,7 @@ title:     Code a Dependable Learning Management System for The Academy of Culin
 slug:      meijin
 tags:      [wordpress, lms, qa, ecommerce, plugin, interoperativity]
 asciinema: true
+cta_text:  We love working with people who make our world a tastier, healthier place. <br /> Does that describe you? Let's discuss over lunch.
 ---
 
 The [Academy of Culinary Nutrition][acn] administers the prestigious Culinary Nutrition

@@ -1,3 +1,5 @@
+$brand-blue: #518dca;
+
 $base-body-background:                          #fff;
 $base-body-font-family:                         "Open Sans", Helvetica, Arial, sans-serif;
 $base-body-font-weight:                         300;
@@ -5,7 +7,7 @@ $base-body-font-size:                           18px;
 $base-body-line-height:                         27px;
 $base-body-color:                               #444;
 
-$base-link-color:                               #518dca;
+$base-link-color:                               $brand-blue;
 $base-link-text-decoration:                     none;
 $base-link-hover-color:                         #059;
 $base-link-hover-text-decoration:               underline;

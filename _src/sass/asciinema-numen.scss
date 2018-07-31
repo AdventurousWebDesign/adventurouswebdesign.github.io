@@ -13,6 +13,10 @@ $term-white: #ffffff;
 }
 .asciinema-theme-numen .bg-fg {    /* inverse for terminal background color */
   background-color: #f8f8f2;
+
+  &.cursor {
+    background-color: rgba($brand-blue, 0.8);
+  }
 }
 .asciinema-theme-numen .fg-0 {
   color: #ABABAB;
