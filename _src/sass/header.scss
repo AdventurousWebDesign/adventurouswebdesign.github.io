@@ -1,3 +1,11 @@
+/**
+ * Header Nav
+ * @block
+ *
+ * Rely on --large and --small modifiers to hide/show and alter element's size.
+ *
+ * <div class="header-nav">..</div>
+ */
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -5,68 +13,90 @@
   align-items: center;
 }
 
-.header-nav__menu {
-  padding-left: 0;
-  list-style-type: none;
-}
-
+/**
+ * Header Nav -- 'large'
+ * @modifier
+ *
+ * Displays on desktop screens and prescribes widths of
+ *  .header-nav__cta,
+ *  .header-nav__menu,
+ *  .header-nav__logo child @elements
+ *
+ */
 .header-nav--large {
   display: none;
 
-  @media screen and (min-width: $breakpoint-large) {
-      display: flex;
-  }
+  @media screen and (min-width: $breakpoint-large) { display: flex; }
 
   .header-nav__cta,
-  .header-nav__logo {
-      width: 25%;
-  }
+  .header-nav__logo { width: 30%; }
 }
 
-.header-nav__menu {
-    width: 50%;
-    margin: 0;
-    text-align: center;
-
-    li {
-        display: inline-block;
-
-        & + li { margin-left: 25px; }
-
-        &.active { font-weight: bold; }
-
-        &:hover a { color: black; }
-    }
-
-    a {
-        @include regular-text();
-        @include directive-text();
-        padding: 16px 10px;
-    }
-}
-
-.header-nav__cta {
-  text-align: right;
-
-  &:hover a { text-decoration: none; }
-}
-
-
+/**
+ * Header Nav -- 'small'
+ * @modifier
+ *
+ * Displays on mobile & tablet screens, and prescribes widths of
+ *  .header-nav__cta,
+ *  .header-nav__bars,
+ *  .header-nav__logo child @elements
+ */
 .header-nav--small {
   display: flex;
   margin-top: 28px;
 
   .header-nav__cta,
   .header-nav__logo,
-  .header-nav__bars {
-      width: 33%;
+  .header-nav__bars { width: 33%; }
+
+  .header-nav__logo { text-align: center; }
+
+  @media screen and (min-width: $breakpoint-medium-max) { display: none; }
+}
+
+/**
+ * Header Nav - Menu
+ * @element
+ *
+ * <ul class="header-nav__menu">
+ *   <li></li>
+ *   ...
+ * </ul>
+ */
+.header-nav__menu {
+  padding-left: 0;
+  list-style-type: none;
+  width: 50%;
+  margin: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    & + li { margin-left: 25px; }
+    &.active { font-weight: bold; }
+    &:hover a { color: black; }
   }
 
-  .header-nav__logo {
-    text-align: center;
+  a {
+    @include regular-text();
+    @include directive-text();
+    padding: 16px 10px;
   }
+}
 
-  @media screen and (min-width: $breakpoint-medium-max) {
-      display: none;
-  }
+/**
+ * Header Nav - Call To Action
+ * @element
+ *
+ * A button container.
+ *
+ * <div class="header-nav__cta">
+ *   <a class="button">..</a>
+ * </div>
+ */
+.header-nav__cta {
+  text-align: right;
+
+  &:hover a { text-decoration: none; }
 }
