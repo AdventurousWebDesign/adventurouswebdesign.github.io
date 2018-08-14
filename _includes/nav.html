@@ -16,9 +16,9 @@
     </div>
 
     <div class="header-nav header-nav--small">
-        <div class="header-nav__bars">
+        <a class="header-nav__bars" data-uk-offcanvas href="#mobile-menu">
             <svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M17,2.37433155 L0,2.37433155 L0,0 L17,0 L17,2.37433155 Z M17,8.19251337 L0,8.19251337 L0,5.82887701 L17,5.82887701 L17,8.19251337 Z M17,14 L0,14 L0,11.6363636 L17,11.6363636 L17,14 Z" fill="#444444"></path></g></svg>
-        </div>
+        </a>
 
         <div class="header-nav__logo">
             <svg width="30px" height="15px" viewBox="0 0 30 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Header" fill="#444444" fill-rule="nonzero"><polygon id="Shape" points="10.1965714 3.565 4.69371429 6.3125 8.14971429 9.34083333 6.90257143 12.9025 0.581142857 7.3675 0.637714286 7.20083333 10.6817143 2.21333333"></polygon><polygon id="Shape" points="10.0165714 14.9875 17.4334286 0.585 19.4991429 0.585 12.0917143 14.9875"></polygon><polygon id="Shape" points="19.9465714 11.5625 25.4597143 8.81166667 21.9942857 5.775 23.2611429 2.21333333 29.5731429 7.74916667 29.5157143 7.92333333 19.4717143 12.9033333"></polygon></g></svg>
@@ -28,5 +28,37 @@
             <a class="button button--link uk-visible-small" href="#">Say "Hi"</a>
             <a class="button button--link uk-visible-medium" href="#">Work Together</a>
         </div>
+    </div>
+
+    <div id="mobile-menu" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="offcanvas-nav">
+          <li class="offcanvas-nav__item uk-margin-bottom">
+            <a href="#" class="uk-offcanvas-close uk-display-inline-block">Close Menu <svg class="uk-offcanvas-close" style="margin-left: 10px; margin-top: -1px;" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75"><path d="M8.67766953,8.67766953 L8.67766953,-2.82233047 L10.6776695,-2.82233047 L10.6776695,8.67766953 L22.1776695,8.67766953 L22.1776695,10.6776695 L10.6776695,10.6776695 L10.6776695,22.1776695 L8.67766953,22.1776695 L8.67766953,10.6776695 L-2.82233047,10.6776695 L-2.82233047,8.67766953 L8.67766953,8.67766953 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(9.677670, 9.677670) rotate(45.000000) translate(-9.677670, -9.677670) "></path></g></svg></a>
+          </li>
+
+          <li class="offcanvas-nav__header {% if page.url == '/about-us/' %}active{% endif %}">
+            <a href="/about-us/">
+              About Us
+              <div class="offcanvas-nav__sub-header">Lorem ipsum dolor sit amet.</div>
+            </a>
+          </li>
+          <li class="offcanvas-nav__header {% if page.url contains '/work/' %}active{% endif %}">
+            <a href="/work/">
+              Our Work
+              <div class="offcanvas-nav__sub-header">Some of our latest.</div>
+            </a>
+          </li>
+          <li class="offcanvas-nav__item"><a href="#">Coding a Dependable Learning Management System for ACN</a></li>
+          <li class="offcanvas-nav__item"><a href="#">Designing & Building a Sales Workflow for Me to We Style</a></li>
+          <li class="offcanvas-nav__see-more"><a href="#">See All</a></li>
+          <li class="offcanvas-nav__header {% if page.url contains '/blog/' %}active{% endif %}">
+            <a href="/blog/">
+              Blog
+              <div class="offcanvas-nav__sub-header">Thoughts and what-have-you.</div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 </div>

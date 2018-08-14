@@ -1,0 +1,141 @@
+/**
+ * A custom, offcanvas navigation list.
+ * @block
+ *
+ * <ul class="offcanvas-nav">
+ *   <li class="offcanvas-nav__header">{text}
+ *     <span class="offcanvas-nav__sub-header"></span>
+ *   </li>
+ *   <li>..</li>
+ *   <li>..</li>
+ *   <li class="offcanvas-nav__see-more">..</li>
+ * </ul>
+ */
+.offcanvas-nav {
+  list-style-type: none;
+  padding: 25px;
+
+  li { display: block; }
+
+  a {
+    font-style: normal;
+    color: white;
+    font-weight: lighter;
+
+    &,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/**
+ * Offcanvas nav item
+ * @element
+ *
+ * <li class="offcanvas-nav__item"><a>{text}</a></li>
+ */
+.offcanvas-nav__item {
+  &,
+  > a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    font-family: $base-body-font-family;
+  }
+
+  + .offcanvas-nav__item { margin-top: 15px; }
+
+  > a { opacity: 0.7; }
+
+  &:hover > a,
+  &:active > a { opacity: 1; }
+
+  > a,
+  &:hover > a,
+  &:active > a { transition: .2s opacity ease-in-out; }
+}
+
+
+/**
+ * Offcanvas section header.
+ * @element
+ *
+ * <li class="offcanvas-nav__header"><a>{text}</a></li>
+ */
+/*li*/.offcanvas-nav__header {
+  margin-top: 30px;
+
+  // Start the group out without spacing up top.
+  &:first-of-type { margin-top: 0; }
+
+  &,
+  > a {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: normal;
+    font-family: $base-heading-font-family;
+    text-transform: none;
+  }
+
+  + .offcanvas-nav__item {
+    margin-top: 20px;
+  }
+}
+
+/**
+ * Offcanvas section sub-header.
+ * @element
+ *
+ * <li class="offcanvas-nav__header">
+ *   <a>
+ *     {text}
+ *     <span class="offcanvas-nav__sub-header"></span>
+ *   </a>
+ * </li>
+ */
+/*li*/.offcanvas-nav__sub-header {
+  &,
+  > a {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: $base-body-font-family;
+    text-transform: none;
+  }
+}
+
+/**
+ * Offcanvas "See More" link
+ * @element
+ *
+ * Usually at the end of a section of .offcanvas-nav__item elements.
+ */
+/*li*/.offcanvas-nav__see-more {
+  margin-top: 15px;
+
+  &,
+  > a {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: $base-body-font-family;
+    text-transform: none;
+    letter-spacing: 0.72px;
+    color: #c7c7c7;
+  }
+
+  > a { position: relative; }
+
+  > a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    height: 2px;
+    background: #c7c7c7;
+  }
+}
