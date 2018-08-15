@@ -122,3 +122,14 @@
   line-height: 25px;
   max-width: 300px;
 }
+
+@media (max-width: $breakpoint-medium-max) {
+  .portfolio-aside__caption {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .portfolio-aside__image {
+    text-align: center;
+  }
+}
