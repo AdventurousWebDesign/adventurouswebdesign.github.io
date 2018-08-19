@@ -2,7 +2,7 @@
 
 import Viewer from 'viewerjs';
 import UIKit from 'uikit';
-import TweenMax from 'gsap/TweenMax';
+import { TweenMax, Power3 } from 'gsap/TweenMax';
 
 (($) => {
   /*
@@ -67,7 +67,7 @@ import TweenMax from 'gsap/TweenMax';
 
 
   // Do mountain paralax only on tablet++
-  if (window.outerWidth > 764) {
+  if (window.innerWidth > 764) {
     const $bgBody1 = $('.portfolio-bg--1');
     const $bgBody2 = $('.portfolio-bg--2');
 
@@ -108,6 +108,30 @@ import TweenMax from 'gsap/TweenMax';
   $.each($('.image-gallery'), (i, el) => {
     const viewer = new Viewer(el, vOpts);
     viewer.initViewer();
+
+    if (window.innerWidth < 764) {
+      const mobilePrompt = $(el).find('.image-gallery__mobile-prompt');
+      const hand = mobilePrompt.find('.hand-x');
+      UIKit.scrollspy(mobilePrompt);
+
+      // Set starting position.
+      TweenMax.set(hand, {
+        rotation: 10,
+        transformOrigin: 'bottom center',
+        x: -20,
+      });
+
+      mobilePrompt.on('inview.uk.scrollspy', () => {
+        TweenMax.to(hand, 0.75, {
+          x: 20,
+          rotation: -10,
+          repeat: 3,
+          ease: Power3.easeInOut,
+          yoyo: true,
+          onComplete: () => { mobilePrompt.fadeOut(); },
+        });
+      });
+    }
   });
 
   $.each($('.terminal--autoplay'), (i, el) => {
