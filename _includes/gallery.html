@@ -2,17 +2,18 @@
 {{ include.before | default: page.image_gallery_container_close | default: '</div>' }}
 {:/nomarkdown}
 
-{% assign images = include.pics | split: "|" %}
+{% assign images = include.pics | newline_to_br | split: "<br />" %}
 
 <div class="image-gallery-container">
-  <div class="image-gallery">
+  <div class="image-gallery image-gallery--bordered">
     <div class="uk-grid uk-grid-small uk-grid-width-1-{{ images | size }}">
     {% for image in images %}
       {% assign pieces = image | split: "~" %}
       {% assign src = pieces[0] %}
       {% assign alt = pieces[1] %}
+      {% assign thumb = pieces[2] | default: src %}
       <div class="image-gallery__item">
-        <img src="{{ src | prepend: '/assets/images/' }}" alt="{{ alt }}" />
+        <img data-original="{{ src | prepend: '/assets/images/' }}" src="{{ thumb | prepend: '/assets/images/' }}" alt="{{ alt }}" />
       </div>
     {% endfor %}
     </div>

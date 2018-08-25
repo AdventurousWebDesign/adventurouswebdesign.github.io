@@ -103,6 +103,7 @@ import { TweenMax, Power3 } from 'gsap/TweenMax';
     rotatable: false,
     scalable: false,
     fullscreen: false,
+    url: 'data-original',
   };
 
   $.each($('.image-gallery'), (i, el) => {

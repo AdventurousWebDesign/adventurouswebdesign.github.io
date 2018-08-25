@@ -30,3 +30,7 @@
     margin-bottom: -25px;
   }
 }
+
+.image-gallery--bordered .image-gallery__item img {
+  border: 2px solid #ddd;
+}
