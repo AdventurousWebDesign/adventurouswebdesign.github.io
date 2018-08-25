@@ -1,6 +1,7 @@
 .terminal {
   border: 2px solid $base-heading-color;
   border-radius: 4px;
+  background: white;
 }
 
 .terminal__menu-bar {
@@ -28,4 +29,7 @@
       &:nth-child(#{$i}) { left: 10px + ((14px + 10px) * ($i - 1)) }
     }
   }
+
+  .text { visibility: hidden; }
+  @media screen and (min-width: 380px) { .text { visibility: visible; } }
 }
