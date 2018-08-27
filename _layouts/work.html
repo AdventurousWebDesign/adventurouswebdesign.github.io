@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
         <link rel="shortcut icon" href="/favicon.png">
-        {% if '' != page.asciinema %}<link href="/assets/asciinema/ascii.css" rel="stylesheet">{% endif %}
+        {% if nil != page.asciinema %}<link href="/assets/asciinema/ascii.css" rel="stylesheet">{% endif %}
     <link href="/assets/app.css" rel="stylesheet"></head>
     </head>
     <body class="portfolio">
@@ -52,7 +52,7 @@
         </script>
         {% endif %}
 
-        {% if '' != page.asciinema %}
+        {% if nil != page.asciinema %}
           <script type="text/javascript" src="/assets/asciinema/ascii.js"></script>
         {% endif %}
 

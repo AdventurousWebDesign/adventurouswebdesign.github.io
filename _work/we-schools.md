@@ -51,9 +51,9 @@ States, Canada, the UK and the Caribbean.
 ### This Application and Workflow Reached:
 
 <div class="uk-grid uk-grid-width-medium-1-3" data-uk-grid-margin data-uk-grid-match>
-  <div>10+ Cities</div>
-  <div>6000+ Students</div>
-  <div>300+ Schools</div>
+  <div>{% include card.html text="10+ Cities" img="/assets/images/city-hall.svg" %}</div>
+  <div>{% include card.html text="6000+ Students" img="/assets/images/students.svg" %}</div>
+  <div>{% include card.html text="300+ Schools" img="/assets/images/school-house.svg" %}</div>
 </div>
 
 Working with Me to We Style on this campaign and helping outfit all the
