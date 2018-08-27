@@ -1,0 +1,12 @@
+{::nomarkdown}
+{{ include.before | default: page.fullwidth_container_close | default: '</div>' }}
+{:/nomarkdown}
+<div class="fullwidth-banner" style="background-image: url('/assets/images/{{ include.banner }}');">
+  <div class="fullwidth-banner-container">
+    <div class="fullwidth-banner__title">{{ include.title }}</div>
+    <div class="fullwidth-banner__subtitle">{{ include.subtitle }}</div>
+  </div>
+</div>
+{::nomarkdown}
+{{ include.after | default: page.fullwidth_container_open | default: '<div>' }}
+{:/nomarkdown}

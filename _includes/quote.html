@@ -1,7 +1,7 @@
 <div class="quote">
   <blockquote class="quote__body">{{ include.body }}</blockquote>
   <div class="quote__meta">
-    {% if include.avatar != '' %}
+    {% if include.avatar != nil %}
     <div class="quote__avatar">
       <img src="{{ include.avatar }}" alt="Photo for {{ indlude.person }}" />
     </div>

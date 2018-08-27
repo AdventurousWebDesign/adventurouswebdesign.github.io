@@ -17,6 +17,8 @@ defaults:
       image_caption_container_open: '<div class="portfolio-container"><div class="portfolio__body">'
       image_gallery_container_close: '</div></div>'
       image_gallery_container_open: '<div class="portfolio-container"><div class="portfolio__body">'
+      fullwidth_container_close: '</div></div>'
+      fullwidth_container_open: '<div class="portfolio-container"><div class="portfolio__body">'
       layout: 'work'
 
 exclude:
