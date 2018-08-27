@@ -30,13 +30,13 @@ the logistical challenge of fulfilling orders for so many We Day attendees.
   person="Oliver Madison" position="Founder & CEO"
   company="Me to We Style" %}
 
-*Listening first to the sales staff's existing workflows*, we zoned in on the
+**Listening first to the sales staff's existing workflows**, we zoned in on the
 parts of the process that could be handled by a form. We hit on: personalized
 sales proposition, data-input, payment-capture.
 
-{% include gallery.html pics="weschools-screen-1.png
-weschools-screen-2.png
-weschools-screen-3.png" %}
+{% include gallery.html pics="weschools-screen-1.jpg~School Data Screen: Step 1~weschools-screen-1-thumb.png
+weschools-screen-2.jpg~Step 2: Order Form~weschools-screen-2-thumb.png
+weschools-screen-3.jpg~Admin Interface~weschools-screen-3-thumb.png" %}
 
 Freeing sales staff up tedious administrative work of order forms and invoices
 was very encouraging! Working closely with the marketing team, we generated new
@@ -50,10 +50,10 @@ States, Canada, the UK and the Caribbean.
 
 ### This Application and Workflow Reached:
 
-<div class="uk-grid uk-grid-width-medium-1-3" data-uk-grid-margin data-uk-grid-match>
-  <div>{% include card.html text="10+ Cities" img="/assets/images/city-hall.svg" %}</div>
-  <div>{% include card.html text="6000+ Students" img="/assets/images/students.svg" %}</div>
-  <div>{% include card.html text="300+ Schools" img="/assets/images/school-house.svg" %}</div>
+<div class="uk-grid uk-grid-width-1-3 uk-flex" data-uk-grid-margin data-uk-grid-match="{target: '.card__image'}">
+  <div>{% include card.html orientation="vertical" text="10+ Cities" img="/assets/images/city-hall.svg" %}</div>
+  <div>{% include card.html orientation="vertical" text="6000+ Students" img="/assets/images/students.svg" %}</div>
+  <div>{% include card.html orientation="vertical" text="300+ Schools" img="/assets/images/school-house.svg" %}</div>
 </div>
 
 Working with Me to We Style on this campaign and helping outfit all the

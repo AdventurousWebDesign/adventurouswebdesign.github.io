@@ -1,0 +1,60 @@
+$fw-banner-padding: 19px;
+
+.fullwidth-banner {
+  width: 100%;
+  min-height: (250px - ($fw-banner-padding * 2));
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+  color: white;
+  padding-top: $fw-banner-padding;
+  padding-bottom: $fw-banner-padding;
+
+  &::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    background: linear-gradient(to bottom, rgba(black, 0.6), rgba(black, 0.18));
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+.fullwidth-banner__title,
+.fullwidth-banner__subtitle {
+  position: relative;
+  z-index: 10;
+}
+
+
+.fullwidth-banner__title {
+  font-size: 15px;
+  line-height: 20px;
+  color: #eaeaea;
+  letter-spacing: 1px;
+}
+
+.fullwidth-banner__subtitle {
+  font-size: 10px;
+  line-height: 15px;
+  margin-top: 5px;
+  letter-spacing: .9px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: $breakpoint-small-max) {
+  .fullwidth-banner-container {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .fullwidth-banner::after {
+    background: linear-gradient(to top, rgba(black, 0.96), rgba(black, 0.18));
+  }
+}

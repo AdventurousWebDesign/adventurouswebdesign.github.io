@@ -19,3 +19,12 @@
     width: calc(100% - 64px - 15px);
   }
 }
+
+.card--vertical {
+  text-align: center;
+
+  .card__text {
+    margin-top: 25px;
+    font-style: italic;
+  }
+}
