@@ -1,0 +1,30 @@
+{% capture image-src %}{{ include.post.screenshot | asset_url }}{% endcapture %}
+
+{% assign image-source-order-class = "" %}
+{% assign text-source-order-class = "" %}
+
+{% if include.orientation == "right" %}
+  {% assign image-source-order-class = " uk-push-2-3" %}
+  {% assign text-source-order-class = " uk-pull-1-3" %}
+{% endif %}
+
+<article class="portfolio-excerpt">
+  <a href="{{ include.post.url }}">
+    <div class="uk-grid uk-grid-collapse">
+      <div class="uk-width-medium-1-3{{ image-source-order-class }}">
+        <div class="portfolio-excerpt__image portfolio-excerpt__image--{{ include.orientation }} ">
+          {% include macbook-skeleton.svg image=image-src %}
+        </div>
+      </div>
+
+      <div class="uk-width-medium-2-3 {{ text-source-order-class }}">
+        <div class="portfolio-excerpt__tags portfolio__tags">{{ include.post.tags | array_to_sentence_string: '' }}</div>
+          <h2 class="portfolio-excerpt__title">{{ include.post.short_title | default: include.post.title }}</h2>
+          {% if nil != include.post.short_meta %}
+            <div class="portfolio-excerpt__meta">{{ include.post.short_meta }}</div>
+          {% endif %}
+        <div class="portfolio-excerpt__text">{{ include.post.content | markdownify | strip_html | truncate: 140 }}</div>
+      </div>
+    </div>
+  </a>
+</article>

@@ -1,7 +1,9 @@
 ---
+title: Our Work
 ---
 {% for item in site.work %}
-  <h2>{{ item.title }}</h2>
-  <p>{{ item.description }}</p>
-  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+  {% if item.url != '/work/index.html' %}
+    {% capture orientation %}{% cycle "right", "left" %}{% endcapture %}
+    {% include excerpt.html post=item orientation=orientation  %}
+  {% endif %}
 {% endfor %}

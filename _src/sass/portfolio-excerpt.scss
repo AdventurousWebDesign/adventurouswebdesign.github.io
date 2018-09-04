@@ -1,0 +1,86 @@
+/**
+ * Portfolio excerpt styles
+ *
+ * @code
+ *   <article class="portfolio-excerpt">
+ *     <a href="{{ post.url }}">
+ *       <div class="portfolio-excerpt__tags portfolio__tags">{{ include.post.tags | array_to_sentence_string: '' }}</div>
+ *       <div>
+ *         <h2 class="portfolio-excerpt__title">{{ include.post.title }}</h2>
+ *         <div class="portfolio-excerpt__meta"></div>
+ *       </div>
+ *       <div class="portfolio-excerpt__text">Lorem ipsum</div>
+ *     </a>
+ *   </article>
+ */
+
+.portfolio-excerpt {}
+
+.portfolio-excerpt + .portfolio-excerpt {
+  margin-top: 100px;
+}
+
+.portfolio-excerpt__tags {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio-excerpt__title {
+  letter-spacing: 0.25px;
+  color: #4a4a4a;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.portfolio-excerpt__meta {
+  font-size: 18px;
+  letter-spacing: -0.25px;
+  color: $brand-blue--lighter;
+  font-family: $base-heading-font-family;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+.portfolio-excerpt__text {
+  color: $base-body-color;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.portfolio-excerpt__image {
+  position: relative;
+  margin-top: 42px;
+
+  svg {
+    position: absolute;
+    width: 400px;
+    max-width: initial;
+  }
+}
+
+.portfolio-excerpt__image--left svg  { right: 20px; }
+.portfolio-excerpt__image--right svg { left:  20px;  }
+
+@media screen and (max-width: $breakpoint-small-max) {
+  .portfolio-excerpt__image {
+    position: relative;
+    margin-top: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      max-width: 80%;
+      margin: 0 auto 20px;
+      top: initial;
+      left: initial;
+      right: initial;
+      bottom: initial;
+    }
+  }
+}

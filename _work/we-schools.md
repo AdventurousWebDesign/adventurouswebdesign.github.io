@@ -1,8 +1,11 @@
 ---
-title:     Designing & Building a Sales Workflow For an International We Day Campaign
-slug:      we-schools
-tags:      [front-and-back-end development, visual design, analytics, email, multi-language]
-cta_text:  We love working with people whose aim is to make the world a better place. <br /> Could that be you? We want to see you in our inbox!
+title:       Designing & Building a Sales Workflow For an International We Day Campaign
+short_title: Designing & Building a Sales Workflow
+short_meta:  for an International We Day Campaign
+screenshot:  /assets/images/weschools-screen-1-thumb.png
+slug:        we-schools
+tags:        [front-and-back-end development, visual design, analytics, email, multi-language]
+cta_text:    We love working with people whose aim is to make the world a better place. <br /> Could that be you? We want to see you in our inbox!
 ---
 
 [Me to We Style][1] is (was) a social enterprise founded in 2007 by Oliver Madison

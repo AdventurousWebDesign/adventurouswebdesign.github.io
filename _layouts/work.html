@@ -25,7 +25,7 @@
         <div class="portfolio-container portfolio-container--expanded">
             <div class="portfolio-meta">
                 <h1 class="portfolio__title">{{ page.title }}</h1>
-                <span class="portfolio__tags">{{ page.tags | array_to_sentence_string: '' }}</h1>
+                <span class="portfolio__tags">{{ page.tags | array_to_sentence_string: '' }}</span>
             </div>
         </div>
 
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        {% if '' != page.cta_text %}
+        {% if nil != page.cta_text %}
             {% include cta.html text=page.cta_text %}
         {% endif %}
 
