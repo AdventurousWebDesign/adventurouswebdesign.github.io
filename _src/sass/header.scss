@@ -100,3 +100,10 @@
 
   &:hover a { text-decoration: none; }
 }
+
+.header-nav-container[data-uk-sticky] {
+  .header-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

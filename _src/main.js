@@ -3,6 +3,7 @@
 import Viewer from 'viewerjs';
 import UIKit from 'uikit';
 import { TweenMax, Power3 } from 'gsap/TweenMax';
+import 'uikit/dist/js/components/sticky';
 
 (($) => {
   /*
