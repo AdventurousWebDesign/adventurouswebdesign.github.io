@@ -3,6 +3,7 @@ title:       Code a Dependable Learning Management System for The Academy of Cul
 short_title: Code a Dependable Learning Management System
 short_meta:  for The Academy of Culinary Nutrition
 screenshot:  /assets/images/meijin-dashboard.png
+graphic:     /assets/images/meijin-monk.png
 slug:        meijin
 tags:        [wordpress, lms, qa, ecommerce, plugin, interoperativity]
 asciinema:   true

@@ -14,7 +14,13 @@
  *   </article>
  */
 
-.portfolio-excerpt {}
+.portfolio-excerpt {
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .portfolio-excerpt + .portfolio-excerpt {
   margin-top: 100px;
@@ -35,6 +41,7 @@
   color: #4a4a4a;
   margin-top: 7px;
   margin-bottom: 12px;
+  font-family: $base-body-font-family;
 }
 
 .portfolio-excerpt__meta {
@@ -83,4 +90,62 @@
       bottom: initial;
     }
   }
+}
+
+/**
+ * Portfolio excerpt, "large" modifier
+ *
+ * @code
+ *   <article class="portfolio-excerpt portfolio-excerpt--large">
+ *     <a href="{{ post.url }}">
+ *       <div class="uk-grid uk-grid-medium">
+ *         <div class="uk-width-medium-1-3">
+ *           <div class="portfolio-excerpt__image">
+ *             <img src="{{ image-src }}" />
+ *           </div>
+ *         </div>
+ *         <div class="uk-width-medium-1-3">
+ *         <div class="portfolio-excerpt__tags portfolio__tags">{{ include.post.tags | array_to_sentence_string: '' }}</div>
+ *         <div>
+ *           <h2 class="portfolio-excerpt__title">{{ include.post.title }}</h2>
+ *           <div class="portfolio-excerpt__meta"></div>
+ *         </div>
+ *         <div class="portfolio-excerpt__text">Lorem ipsum</div>
+ *       </div>
+ *     </a>
+ *   </article>
+ */
+.portfolio-excerpt--large {
+  box-shadow: 0 0 5px rgba(black, 0.1);
+  padding: 25px;
+  background: radial-gradient(white 60%, rgba(white, 0.10)), url(/img/topo-map.svg) 100%;
+  border: 1px solid #fff;
+
+  &:nth-of-type(2n) {
+    background: radial-gradient(white 60%, rgba(white, 0.10)), url(/img/topo-map-flipped.svg) 100%;
+  }
+
+  &:hover {
+    background: radial-gradient(white 30%, rgba(white, 0.05)), url(/img/topo-map.svg) 100%;
+    &:nth-of-type(2n) { background: radial-gradient(white 30%, rgba(white, 0.05)), url(/img/topo-map-flipped.svg) 100%; }
+    border: 1px solid #eee;
+
+    .portfolio-excerpt__image { transform: rotate(-2deg); }
+
+    &:nth-of-type(2n) .portfolio-excerpt__image { transform: rotate(2deg); } }
+
+  &,
+  &:hover {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .portfolio-excerpt--large {
+    padding: 75px 75px 78px;
+  }
+}
+
+.portfolio-excerpt--large .portfolio-excerpt__image {
+  margin-top: 0;
 }
