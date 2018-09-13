@@ -24,6 +24,11 @@ module.exports = {
       filename: '../_layouts/work.html',
       alwaysWriteToDisk: true,
     }),
+    new HtmlWebpackPlugin({
+      template: './_src/template/default.html',
+      filename: '../_layouts/default.html',
+      alwaysWriteToDisk: true,
+    }),
     new ExtractTextPlugin('[name].css'),
     new HtmlWebpackHarddiskPlugin(),
   ],
