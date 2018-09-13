@@ -60,9 +60,14 @@ import 'uikit/dist/js/components/sticky';
       if (window.TweenMax) {
         TweenMax.set($bgBlur, { alpha });
         TweenMax.set($logo, { alpha: 1 - (alpha * 0.8) });
-        $tmHeaders.css('background-position', `center -${scrollTop / 3}}px`);
+        $tmHeaders.css({
+          'background-position': `center -${scrollTop / 3}}px`,
+          visibility: 'visible',
+        });
         $logo.css('padding-top', `${scrollTop / 2}px`);
       }
+    } else {
+      $tmHeaders.css('visibility', 'hidden');
     }
   });
 
