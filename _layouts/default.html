@@ -20,12 +20,12 @@
         <![endif]-->
         {% include nav.html %}
 
-        <div class="uk-container portfolio-meta uk-container-center">
+        <div class="portfolio-container portfolio-meta">
            <h1 class="portfolio__title">{{ page.title }}</h1>
         </div>
 
-        <div class="uk-container uk-container-center">
-            {{ page.content }}
+        <div class="portfolio-container">
+            {{ page.content | markdownify }}
         </div>
 
         {% if nil != page.cta_text %}
