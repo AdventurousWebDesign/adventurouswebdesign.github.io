@@ -1,6 +1,4 @@
----
-layout: default
-title: "Why Should Developers Still Bother With WordPress?"
+--- layout: default title: "Why Should Developers Still Bother With WordPress?"
 ---
 
 WordPress, in the opinion of many developers and designers, is a headache. [It
@@ -33,129 +31,125 @@ needs! Continuing from the quote above:
   also the freedom to have complete control over it.
 
 I understand and applaud such strong commitment to [Open Source][open-source]!
-However, the impression that non-technical WordPress users are left with is that
-open source software can be extended indefinitely and with little friction.
-With access to these free plugins and no licensing headaches, site owners clear
-a lot of obstacles via WordPress! Those easily cleared obstacles become frames
-of reference for more sophisticated development projects. Expectations are
-anchored by the enthusiasm of the marketing copy, and developers arrive to
-projects with very rosy premises already in play.
+But this language oversells it to non-technical users. In theory, one can extend
+open source software indefinitely, but not without friction. Downloading
+plugins, a WordPress site owner avoids development obstacles. (In the process,
+they gain a lot of functionality for their site.) Those obstacles in their
+rear-view become frames of reference for sophisticated development projects. The
+enthusiasm of the marketing copy anchors expectations. Consequently, developers
+often arrive to project meetings with rosy premises in play.
 
-Most developers have heard some variation on this: "*We simply need you to add
-feature X to plugin Y that we've sourced for you. Most the code is already
-there.*" There's a mismatch between what WordPress communicates about itself and
-its plugins and the reality of extending of those plugins. Some developers see
-avoiding WordPress as a way to filter out these types of scenarios and the
-uphill battles that come with them.
+Most developers have heard some variation on the following. "*We need you to add
+Feature X to Plugin Y that we've already sourced for you. Most the code is
+already there.*" So, some developers avoid WordPress altogether. They do this as
+a way to filter out scenarios where they'd be battling uphill for understanding.
+If it's not yet clear why extending freely-available plugins can be
+time-consuming and inefficient, read on...
 
 
 ### 2. Spaghetti Code Forever
 
 (Health outcomes are not part of the analogy that follows.)
 
-Well-designed code can be imagined as a microwave dinner with each ingredient
-tucked neatly into its own slot in the tray. The opposite of this is
-**spaghetti**: ingredients twisted around one another, mixed amongst themselves
-&mdash; messy by nature!
+Well-designed code can be imagined as a microwave dinner. Each ingredient tucked
+neatly into its own slot in the tray. The opposite of this is **spaghetti**.
+Ingredients twisted around one another, mixed amongst themselves &mdash; messy
+by nature!
 
-WordPress is a heaping plate of [spaghetti code][spaghetti-code]. During the
-execution of a single WordPress function you might see it output HTML, query the
-database, and add variables to the global scope. Each of these actions *should*
-be handled by separate, well-defined functions. When a project does so, it
+WordPress is a heaping plate of [spaghetti code][spaghetti-code]. Consider the
+execution of a single WordPress function. You might see it output HTML, query
+the database, and add variables to the global scope. A separate, well-defined
+function should handle each of these actions. When a project does that, it
 adheres to the [single-responsibility] principal. Code written this way is
 easier to test, maintain, and understand. Spaghetti coding sacrifices these
-benefits for reasons that are not always apparent. From
+benefits for reasons that are not always obvious. From
 [wikipedia][single-responsibility]:
 
 > The single responsibility principle is a computer programming principle that
-  states that every module or class should have responsibility over a single
-  part of the functionality provided by the software, and that responsibility
-  should be entirely encapsulated by the class.
+states that every module or class should have responsibility over a single part
+of the functionality provided by the software, and that responsibility should be
+entirely encapsulated by the class.
 
-To hedge against a large project turning into spaghetti, use the programming
-language it's written in to draw boundaries between different feature-level
-responsibilities. WordPress's programming language, PHP, has something that
-can help with this: [namespacing][namespacing]. However, PHP only added
-namespaces in version 5.3, which was released in 2009 - a full 5 years after the
-initial release of WordPress.
+How can one hedge against a large project turning into spaghetti? One answer is
+to use the programming language to draw boundaries. WordPress's programming
+language, PHP, has something that can help with this:
+[namespacing][namespacing]. Sadly, PHP only added namespaces in version 5.3,
+which came out in 2009. That's a full 5 years after the initial release of
+WordPress!
 
-This is a theme: some foundational improvement is made to the language WordPress
-is written in (or the larger ecosystem of code & tools that it occupies) but it
-can't be applied to the existing code without a substantial re-write. And so,
-the spaghetti code stays[^2]. Who wants to work in such a messy environment?
-Some developers will always prefer a more modern tool for these reasons.
+This is a recurring theme. Upstream from WordPress, PHP and the greater software
+development community make structural improvements. WordPress can't apply them
+to the existing code without a substantial re-write. And so, the spaghetti code
+stays[^2]. And who wants to work with outmoded practices and tools?
+
 
 
 ### 3. Worst Practices
 
-WordPress is a web application. Coincidentally, there is a well respected and
-widely applied methodology for building web apps. It's called "[The 12 Factor
-App][12-factor]". Natively, WordPress implements precisely zero of these. Nor
-does it conform to any of the [PHP Standard Recommendations][psrs] meant to
-help developers write robust & readable code!
+WordPress is a web application. There are well respected and oft-applied
+guidelines for building web apps. "[The 12 Factor App][12-factor]" details some
+of those gold standards. WordPress flouts all 12 factors. Neither does it
+conform to any of the [PHP Standard Recommendations][psrs]. (The PSRs are sets
+of rules to help developers write robust & readable code.)
 
-This is no format war, like Blu-ray vs. HD-DVD. There is no WordPress equivalent
-to any of the *12 Factors* or *PSRs*. Very little about the WordPress project
-encourages modern development practices like testing environments or systematic
-deployments. An improved analogy is made by comparing Old 480p DVDs to a 1080p
-Blu-ray. WordPress is at a *generational disadvantage* where best practices are
-concerned.
+This is no format war. It isn't like Blu-ray vs. HD-DVD. WordPress has no
+analogues to any of the *12 Factors* or *PSRs*. When writing WordPress, the
+authors couldn't foresee future development practices. Testing environments,
+dependency managers, and automated deployments weren't common in the PHP world.
+One makes an improved analogy by comparing Old 480p DVDs to a 1080p Blu-ray. On
+best practices, WordPress is at a *generational disadvantage*.
 
 Two quick consequences/observations that follow the above criticisms:
 
-<ul style="list-style-type: lower-roman;">
+<ul style="list-style-type: lower-roman;"> <li>[Cowboy coding][cowboy] is still
+very much the norm in the WordPress consulting scene. It's found in places that
+you may expect it: freelancers on UpWork or Fiverr. Yet, the white-collar,
+professional-seeming WordPress agencies also do this with startling
+frequency!</li>
 
-<li>First: [cowboy coding][cowboy] is still very much the norm in the WordPress
-consulting scene. It's found in places that you may expect it: freelancers on
-UpWork or Fiverr. However, the white-collar, professional-seeming WordPress
-agencies also do this with startling frequency!</li>
+<li> WordPress' core files don't pass [their own code standards
+checks][wp-coding-standards]! [^4] This is emblematic of the generational
+disadvantage the codebase suffers from. (The standards came into being 13 years
+after WP did.)</li> </ul>
 
-<li> Secondly: emblematic of this generational disadvantage is how WordPress' core
-files don't pass [their own code standards checks][wp-coding-standards]! [^4]
-(They came into being 13 years after WP did; that's a lot of code to
-update)</li>
-
-</ul>
 
 
 ## When are the Trade-offs Worthwhile?
 
-If you're just starting out your development career or don't have experience
-with WordPress, use it on a small to mid-sized project. Getting familiarized
-with such a popular framework gives you an idea &mdash; broadly speaking &mdash;
-of what many of your developer colleagues work with on the daily.
+If you're new to web development, or lack experience with WordPress, use it on a
+small to mid-sized project. Familiarizing yourself such a popular framework
+gives you a new perspective. This software is what many web developers use on
+the daily.
 
-Depending on your priorities &mdash; you might reconsider developing WordPress
-themes or plugins on the basis of their [booming premium theme/plugin
-marketplaces][wp-marketplaces]. As a developer, you may have gripes about how
-WordPress is set up, about how messy and bogged down the sites get in most
-people's hands. That said, the Gordon Gecko in you could probably be made to see
-the appeal in such a large, captive market.
+You might also consider developing WordPress themes or plugins. Take a look at
+their [booming premium theme/plugin marketplaces][wp-marketplaces]. You may have
+gripes about how WordPress is set up, how messy and bogged down the sites get in
+many hands. But, the Gordon Gecko might see the appeal in such a large, captive
+market.
 
 
 ## Alternatives
 
-If you can to jump ship or carve off a develop part of a project independent
-of WordPress, here are a few reccomendations:
+If you can jump ship, or make part of a project independent of WordPress, here
+are a few recommendations:
 
 [Symfony][symfony] or [Laravel][laravel] are PHP frameworks. They should be
-considered if you're developing functionality beyond simple *content
-management*. Both have their idiosyncracies, but you'll find that they're more
-or less in step with *12 factors*. They're also mature, open source projects
-with vibrant communities and contributors.
+considered if you're developing functionality beyond simple content management.
+Both have their idiosyncrasies, but you'll find that they're more or less in
+step with *12 factors*. They're also mature, open source projects with vibrant
+communities and contributors.
 
-If you're regularly working with WordPress, some projects require you only to
-style some content. Content isn't always updated frequently! If you or your team
-can handle the infrequent updates, a [static][jekyll] [site][next]
-[generator][hugo][^3] is a wonderful way to go. Such a project sidesteps many
-other maintenance, performance and security concerns!
+Some projects require only content styling. Content isn't always updated
+frequently! If you or your team can handle those updates, a [static][jekyll]
+[site][next] [generator][hugo][^3] is a wonderful choice. Such a tool sidesteps
+most maintenance, performance and security concerns!
 
 Sometimes [costs are sunk][sunk-costs], and there's no convincing your agency,
-client, or stakeholders to head for greener pastures. Maybe you can content
-yourself by grafting some modern development practices to the project with the
-tooling over at [roots.io](https://roots.io). Further, there's nothing
-preventing you from writing quality plugins and implementing testing and
-continuous integration within *your* corner of a WordPress project.
+client, or stakeholders. You can graft some modern development practices to the
+project with the tooling over at [roots.io](https://roots.io). And take heart!
+Nothing stops you from writing quality code within your corner of a WordPress
+project..
+
 
 ## Conclusion (tl;dr)
 
@@ -183,7 +177,7 @@ exploring alternatives where you can convince stakeholders to do so.
 [namespacing]: http://php.net/manual/en/language.namespaces.rationale.php
 
 [^1]: To say nothing of premium themes and plugins, and their feature lists.
-      Think War & Peace.
+      (Think War & Peace.)
 
 [^2]: Stains?
 
