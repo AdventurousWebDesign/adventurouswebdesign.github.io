@@ -1,4 +1,6 @@
---- layout: default title: "Why Should Developers Still Bother With WordPress?"
+---
+layout: default
+title: "Why Should Developers Still Bother With WordPress?"
 ---
 
 WordPress, in the opinion of many developers and designers, is a headache. [It
@@ -12,7 +14,7 @@ we'll evaluate a few alternatives.
 
 ## Critiques
 
-### 1. Plugins and Promises
+<h3 class="margin-numeral" data-margin-num="1.">Plugins and Promises</h3>
 
 WordPress has a *lot* of free[^1] plugins. Here's [how they frame
 it][wp-plugins-copy]:
@@ -47,7 +49,7 @@ If it's not yet clear why extending freely-available plugins can be
 time-consuming and inefficient, read on...
 
 
-### 2. Spaghetti Code Forever
+<h3 class="margin-numeral" data-margin-num="2.">Spaghetti Code Forever</h3>
 
 (Health outcomes are not part of the analogy that follows.)
 
@@ -83,8 +85,8 @@ to the existing code without a substantial re-write. And so, the spaghetti code
 stays[^2]. And who wants to work with outmoded practices and tools?
 
 
+<h3 class="margin-numeral" data-margin-num="3.">Worst Practices</h3>
 
-### 3. Worst Practices
 
 WordPress is a web application. There are well respected and oft-applied
 guidelines for building web apps. "[The 12 Factor App][12-factor]" details some
@@ -101,17 +103,15 @@ best practices, WordPress is at a *generational disadvantage*.
 
 Two quick consequences/observations that follow the above criticisms:
 
-<ul style="list-style-type: lower-roman;"> <li>[Cowboy coding][cowboy] is still
-very much the norm in the WordPress consulting scene. It's found in places that
-you may expect it: freelancers on UpWork or Fiverr. Yet, the white-collar,
-professional-seeming WordPress agencies also do this with startling
-frequency!</li>
+* [Cowboy coding][cowboy] is still very much the norm in the WordPress
+  consulting scene. It's found in places that you may expect it: freelancers on
+  UpWork or Fiverr. Yet, the white-collar, professional-seeming WordPress
+  agencies also do this with startling frequency!
 
-<li> WordPress' core files don't pass [their own code standards
-checks][wp-coding-standards]! [^4] This is emblematic of the generational
-disadvantage the codebase suffers from. (The standards came into being 13 years
-after WP did.)</li> </ul>
-
+* WordPress' core files don't pass [their own code standards
+  checks][wp-coding-standards]! [^4] This is emblematic of the generational
+  disadvantage the codebase suffers from. (The standards came into being 13
+  years after WP did.)
 
 
 ## When are the Trade-offs Worthwhile?
@@ -157,6 +157,22 @@ WordPress has lots of problems, but it's still very popular. Developers often
 have good reason for being skeptical about adopting it. It's worthwhile
 exploring alternatives where you can convince stakeholders to do so.
 
+---
+
+[^1]: To say nothing of premium themes and plugins, and their feature lists.
+      (Think War & Peace.)
+
+[^2]: Stains?
+
+[^3]: I acknowledge that this criticism loses some of its edge when you consider
+      that these rules were created 6 years into the WordPress project. (Also
+      consider that it was another *7* years before a WP core contributor really
+      bring it into the fold.) Retroactively updating decades-old functions to
+      comport with new standards is no small task. But this is precisely the
+      point!
+
+[^4]: A very cool seeming, quixotic take: https://wp2static.com/
+
 
 [12-factor]: https://12factor.net/
 [wp-usage]: https://www.codeinwp.com/blog/wordpress-statistics/#popularity
@@ -175,17 +191,3 @@ exploring alternatives where you can convince stakeholders to do so.
 [next]: https://nextjs.org/learn/
 [hugo]: https://gohugo.io/
 [namespacing]: http://php.net/manual/en/language.namespaces.rationale.php
-
-[^1]: To say nothing of premium themes and plugins, and their feature lists.
-      (Think War & Peace.)
-
-[^2]: Stains?
-
-[^3]: I acknowledge that this criticism loses some of its edge when you consider
-      that these rules were created 6 years into the WordPress project. (Also
-      consider that it was another *7* years before a WP core contributor really
-      bring it into the fold.) Retroactively updating decades-old functions to
-      comport with new standards is no small task. But this is precisely the
-      point!
-
-[^4]: A very cool seeming, quixotic take: https://wp2static.com/
