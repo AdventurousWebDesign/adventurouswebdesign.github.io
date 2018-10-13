@@ -24,8 +24,8 @@
            <h1 class="portfolio__title">{{ page.title }}</h1>
         </div>
 
-        <div class="portfolio-container">
-            {{ content }}
+        <div class="portfolio-container post-container">
+            {{ content | markdownify }}
         </div>
 
         {% if nil != page.cta_text %}

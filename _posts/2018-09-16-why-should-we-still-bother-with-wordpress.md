@@ -164,14 +164,14 @@ exploring alternatives where you can convince stakeholders to do so.
 
 [^2]: Stains?
 
-[^3]: I acknowledge that this criticism loses some of its edge when you consider
+[^3]: A very cool seeming, quixotic take: https://wp2static.com/
+
+[^4]: I acknowledge that this criticism loses some of its edge when you consider
       that these rules were created 6 years into the WordPress project. (Also
       consider that it was another *7* years before a WP core contributor really
       bring it into the fold.) Retroactively updating decades-old functions to
       comport with new standards is no small task. But this is precisely the
       point!
-
-[^4]: A very cool seeming, quixotic take: https://wp2static.com/
 
 
 [12-factor]: https://12factor.net/

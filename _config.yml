@@ -2,6 +2,8 @@ name:        Adventurous Web Design
 markdown:    kramdown
 highlighter: rouge
 
+permalink: /blog/:title:output_ext
+
 collections:
   work:
     output:    true
