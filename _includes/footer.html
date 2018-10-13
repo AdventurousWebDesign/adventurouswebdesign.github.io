@@ -25,10 +25,9 @@
           <div class="uk-width-large-1-3 uk-width-small-1-3 uk-width-1-1">
             <ul class="uk-nav">
               <li class="uk-nav-header">Blog</li>
-              <li><a href="#" class="uk-text-truncate">A post</a></li>
-              <li><a href="#" class="uk-text-truncate">Another post</a></li>
-              <li><a href="#" class="uk-text-truncate">Posting is great.</a></li>
-              <li><a href="#" class="uk-text-truncate">Opprobrium</a></li>
+              {% for post in site.posts %}
+                <li><a href="{{ post.url }}" class="uk-text-truncate">{{ post.title }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </div>
