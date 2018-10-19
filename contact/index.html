@@ -1,0 +1,43 @@
+---
+layout: default
+title: Contact Us
+slug: contact
+---
+
+
+<form id="contact" action="" class="">
+  <div class="uk-grid" data-uk-grid-margin="{cls: uk-margin-large-top}">
+    <div class="uk-width-medium-1-2">
+      <div class="has-float-label">
+        <input id="name" type="name" name="name" placeholder="Job Bluth" class="uk-width-1-1" required />
+        <label for="name">Name</label>
+      </div>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+      <div class="has-float-label">
+        <input id="email" type="email" name="email" placeholder="name@example.com" class="uk-width-1-1" required />
+        <label for="email">Email</label>
+      </div>
+    </div>
+
+    <div class="uk-width-1-1">
+      <div class="has-float-label">
+        <textarea name="message" class="uk-width-1-1" placeholder="My name is ___ and I'm here to say:" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+    </div>
+
+    <div class="uk-width-1-1">
+      <button class="button button--shadow button--light">Submit</button>
+    </div>
+  </div>
+</form>
+
+<style type="text/css">
+  #contact.blocked input,
+  #contact.blocked textarea,
+  #contact.blocked button {
+    cursor: wait;
+  }
+</style>

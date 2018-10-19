@@ -1,0 +1,91 @@
+/* Powered by: https://github.com/tonystar/float-label-css */
+
+/* Re-usable mixins
+ * https://github.com/tonystar/float-label-css/blob/master/scss/_mixins.scss
+ */
+@mixin float-label-container {
+  display: block;
+  position: relative;
+}
+
+@mixin float-label {
+  label, > span {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    cursor: text;
+    text-transform: uppercase;
+    font-size: 75%;
+    opacity: 1;
+    transition: all .2s;
+    @content;
+  }
+}
+
+@mixin float-label-input {
+  &::placeholder {
+    opacity: 1;
+    transition: all .2s;
+  }
+  &:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0;
+  }
+}
+
+@mixin float-label-scaled {
+  &:placeholder-shown:not(:focus) + * {
+      font-size: 18px;
+      opacity: .7;
+      @content;
+  }
+}
+
+/* Default styling
+ * https://github.com/tonystar/float-label-css/blob/master/scss/float-label.scss
+ */
+.has-float-label {
+  @include float-label-container;
+  @include float-label;
+
+  input,
+  select,
+  textarea {
+    @include float-label-input;
+    font-size: inherit;
+    font-family: $base-body-font-family;
+    padding: 11px 15px;
+    border: 1px solid #e8e8e8;
+    background: #f8f8f8;
+
+    @include float-label-scaled {
+      top: 11px;
+      left: 15px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $brand-blue;
+    }
+
+    &.valid {
+      border-color: #4fbfc9;
+    }
+
+    &.invalid {
+      border-color: #c95151;
+    }
+
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #555;
+      -webkit-box-shadow: 0 0 0 30px #f8f8f8 inset;
+    }
+  }
+
+  select {
+    padding-right: 1em;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .5em bottom .25em;
+    background-size: 8px 10px;
+    appearance: none;
+  }
+}
+

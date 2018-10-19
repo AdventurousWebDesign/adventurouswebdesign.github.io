@@ -45,7 +45,7 @@
 
         {% capture page_specific_script %}{{ page.slug | prepend: 'scripts/posts/' | append: '.js'}}{% endcapture %}
         {% capture page_specific_script_exists %}{% file_exists {{ page_specific_script | prepend: '_includes/' }} %}{% endcapture %}
-        {% if true == page_specific_script_exists %}
+        {% if 'true' == page_specific_script_exists %}
         <script type="text/javascript">
             {% include {{ page_specific_script }} %}
         </script>

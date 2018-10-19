@@ -24,8 +24,8 @@
            <h1 class="portfolio__title">{{ page.title }}</h1>
         </div>
 
-        <div class="portfolio-container">
-            {{ content }}
+        <div class="portfolio-container post-container">
+            {{ content | markdownify }}
         </div>
 
         {% if nil != page.cta_text %}
@@ -39,7 +39,8 @@
 
         {% capture page_specific_script %}{{ page.slug | prepend: 'scripts/posts/' | append: '.js'}}{% endcapture %}
         {% capture page_specific_script_exists %}{% file_exists {{ page_specific_script | prepend: '_includes/' }} %}{% endcapture %}
-        {% if true == page_specific_script_exists %}
+
+        {% if 'true' == page_specific_script_exists %}
         <script type="text/javascript">
             {% include {{ page_specific_script }} %}
         </script>

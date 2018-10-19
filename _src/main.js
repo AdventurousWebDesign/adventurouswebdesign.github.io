@@ -1,9 +1,10 @@
-/* global window jQuery:true */
+/* global window document jQuery:true */
 
 import Viewer from 'viewerjs';
 import UIKit from 'uikit';
 import { TweenMax, Power3 } from 'gsap/TweenMax';
 import 'uikit/dist/js/components/sticky';
+import 'uikit/dist/js/components/notify';
 
 (($) => {
   /*
@@ -148,4 +149,56 @@ import 'uikit/dist/js/components/sticky';
     $el.on('inview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('play'); });
     $el.on('outview.uk.scrollspy', () => { $el.find('asciinema-player').trigger('pause'); });
   });
+
+  if (window.location.pathname.indexOf('contact') !== -1) {
+    $(document).on('afterready.uk.dom', () => {
+      const form = $('#contact');
+
+      document.getElementById('contact').addEventListener('keyup', (e) => {
+        if (e.target.checkValidity() === true) {
+          $(e.target).removeClass('invalid').addClass('valid');
+        } else {
+          $(e.target).addClass('invalid').removeClass('valid');
+        }
+      }, true);
+
+      document.getElementById('contact').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const data = form.serializeArray();
+        const message = UIKit.notify({
+          message: 'Submitting',
+          timeout: 0,
+          status: 'default',
+          pos: 'top-center',
+        });
+
+        form
+          .find('input, textarea, select, button')
+          .addClass('blocked')
+          .attr('disabled', 'disabled');
+
+        $.ajax(
+          'https://hooks.zapier.com/hooks/catch/247165/l7oaeq/',
+          {
+            data,
+            dataType: 'json',
+            method: 'POST',
+          },
+        ).fail(() => {
+          form
+            .find('input, textarea, select, button')
+            .removeClass('blocked')
+            .removeAttr('disabled');
+          form.prepend('<div class="uk-notify-message uk-margin-large-bottom">Problem submitting your message. Please email me@cameronhurd.com if this persists!</div>');
+        }).done(() => {
+          form.find('.has-float-label').css('opacity', 0.8);
+          form.prepend('<div class="uk-notify-message uk-margin-large-bottom">Thank you. Your message was recieved!</div>');
+          form.find('button').fadeOut();
+        }).always(() => {
+          message.close();
+        });
+      }, true);
+    });
+  }
 })(jQuery);
