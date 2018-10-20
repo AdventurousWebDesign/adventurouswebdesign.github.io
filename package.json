@@ -11,7 +11,8 @@
   "scripts": {
     "start:dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"jekyll build -w\"",
     "jekyll:build": "jekyll build",
-    "webpack": "webpack-dev-server --env=dev"
+    "webpack": "webpack-dev-server --env=dev",
+    "build:prod": "jekyll build && webpack --env=prod --progress --profile --colors;"
   },
   "author": "Cameron Hurd",
   "license": "WTFPL",

@@ -3,6 +3,7 @@ const common = require('./webpack.common.js');
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -34,6 +35,7 @@ module.exports = merge(common, {
       },
     ),
     new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin('[name].css'),
   ],
   devServer: {
     contentBase: [
