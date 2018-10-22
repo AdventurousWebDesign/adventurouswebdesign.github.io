@@ -40,12 +40,6 @@ hundreds of people! We've served up X seasons of courses and counting, and it's
 been a joy.
 {% endcapture %}
 
-{% include quote.html
-  body=quote-body avatar="/assets/images/meghan-telpner.jpg"
-  person="Meghan Telpner" position="Founder"
-  company="The Academy of Culinary Nutrition"
-%}
-
 We started translating the standard LMS user flows into prototypes. Extending
 beyond the basic LMS feature set to cover the ACN's specific needs. Meghan and
 her team already had a well-worn map of their students' and experts'
