@@ -28,16 +28,14 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - docker-composer.yml
   - _src
   - _images
   - LICENSE
   - package.json
+  - package-lock.json
   - README.md
   - Session.vim
   - webpack.config.js
-  - yarn-error.log
-  - yarn.lock
   - config
-  - optimization-fix
-  - optimization-fix-this-file-is-ignored.js
   - icon.png
