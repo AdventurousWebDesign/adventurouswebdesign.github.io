@@ -24,8 +24,10 @@ script:
 deploy:
   provider: pages
   local-dir: _site
+  target-branch: master
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on: # Only deploy changes committed to master branch
-    branch: master
+  keep-history: false
+  verbose: true
+  on: # Only deploy changes committed to develop branch
+    branch: develop
