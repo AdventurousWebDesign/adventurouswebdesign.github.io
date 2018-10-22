@@ -1,0 +1,31 @@
+dist: trusty
+language: ruby
+sudo: false
+
+rvm:
+  - 2.4.1
+
+env:
+  - TRAVIS_NODE_VERSION="7"
+
+cache:
+  npm: true
+  directories:
+    - $HOME/~/.npm/_cacache
+
+before_script:
+  - gem install jekyll
+  - npm install
+
+script:
+  - npm run build:prod
+  - bundle exec jekyll build
+
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on: # Only deploy changes committed to master branch
+    branch: master
