@@ -9,7 +9,6 @@ env:
   - TRAVIS_NODE_VERSION="7"
 
 cache:
-  npm: true
   directories:
     - $HOME/~/.npm/_cacache
 
