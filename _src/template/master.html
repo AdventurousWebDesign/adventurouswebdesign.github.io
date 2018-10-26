@@ -19,7 +19,12 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        {% include nav.html sticky-attrs='data-uk-sticky="{top:-200, animation: \'uk-animation-slide-top\'}"' %}
+        {% include nav.html
+          hide-logo=true
+          hide-button=true
+          menu-classes='header-nav__menu--small'
+          header-classes='header-nav--transparent'
+          container-classes='header-nav-container--absolute' %}
 
         {% if page.header %}
           {% include {{page.header}} %}

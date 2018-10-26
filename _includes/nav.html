@@ -1,22 +1,26 @@
-<div class="header-nav-container" {{ include.sticky-attrs | default: '' }}>
+<div class="header-nav-container {{ include.container-classes | default: '' }}">
   <div class="uk-container uk-container-center">
-      <div class="header-nav header-nav--large">
+      <div class="header-nav {{ include.header-classes | default: '' }} header-nav--large">
+          {% unless true == include.hide-logo %}
           <div class="header-nav__logo">
               <a href="/">{% include logo-dark.svg %}</a>
           </div>
+          {% endunless %}
 
-          <ul class="header-nav__menu">
+          <ul class="header-nav__menu {{ include.menu-classes | default: '' }}">
               <li class="{% if page.url == '/about-us/' %}active{% endif %}"><a href="/about-us/">About Us</a></li>
               <li class="{% if page.url contains '/work/' %}active{% endif %}"><a href="/work/">Our Work</a></li>
               <li class="{% if page.url contains '/blog/' %}active{% endif %}"><a href="/blog/">Blog</a></li>
           </ul>
 
+          {% unless true == include.hide-button %}
           <div class="header-nav__cta">
               <a class="button button--shadow button--light" href="/contact">Work Together</a>
           </div>
+          {% endunless %}
       </div>
 
-      <div class="header-nav header-nav--small">
+      <div class="header-nav {{ include.header-classes | default: '' }} header-nav--small">
           <a class="header-nav__bars" data-uk-offcanvas href="#mobile-menu">
               <svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M17,2.37433155 L0,2.37433155 L0,0 L17,0 L17,2.37433155 Z M17,8.19251337 L0,8.19251337 L0,5.82887701 L17,5.82887701 L17,8.19251337 Z M17,14 L0,14 L0,11.6363636 L17,11.6363636 L17,14 Z" fill="#444444"></path></g></svg>
           </a>
