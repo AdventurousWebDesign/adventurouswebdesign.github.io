@@ -25,9 +25,9 @@ $tagline-size:   60px;
 }
 
 .bg-grey-topo {
-  background: url(/img/exclusive-paper.png) fixed,
-              linear-gradient(to bottom,#F3F2EB 70%,rgba(250,249,240,0)) fixed,
-              url(/img/topo-map.svg) repeat-x bottom / 480px fixed,
+  background: url(/img/exclusive-paper.png),
+              linear-gradient(to bottom,#F3F2EB 70%,rgba(250,249,240,0)),
+              url(/img/topo-map.svg) repeat-x bottom / 480px;
 }
 
 .icon-link i {
@@ -65,6 +65,7 @@ $tagline-size:   60px;
 		z-index:20;
 		background-image:url(/assets/mountains-blurred.jpg);
 		opacity:0;
+    will-change: opacity;
 	}
 
 	& + .tm-header-container {
@@ -153,6 +154,7 @@ $tagline-size:   60px;
   }
 
   &.uk-scrollspy-inview {
+    will-change: opacity;
     g#Topo,
     g#Grant,
     g#Water,
