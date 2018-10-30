@@ -13,12 +13,12 @@ cache:
     - $HOME/~/.npm/_cacache
 
 before_script:
-  - gem install jekyll
+  - gem install jekyll rake
   - npm install
 
 script:
   - npm run build:prod
-  - bundle exec jekyll build
+  - bundle exec rake
 
 deploy:
   provider: pages
