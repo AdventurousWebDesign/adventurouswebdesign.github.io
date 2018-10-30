@@ -13,7 +13,7 @@ cache:
     - $HOME/~/.npm/_cacache
 
 before_script:
-  - gem install jekyll rake
+  - bundle install
   - npm install
 
 script:
