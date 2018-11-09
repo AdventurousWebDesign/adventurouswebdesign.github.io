@@ -25,9 +25,9 @@ $tagline-size:   60px;
 }
 
 .bg-grey-topo {
-  background: url(/img/exclusive-paper.png),
+  background: url('./../img/exclusive-paper.png'),
               linear-gradient(to bottom,#F3F2EB 70%,rgba(250,249,240,0)),
-              url(/img/topo-map.svg) repeat-x bottom / 480px;
+              url('./../img/topo-map.svg') repeat-x bottom / 480px;
 }
 
 .icon-link i {
