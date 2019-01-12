@@ -1,9 +1,9 @@
 ---
 title:       Power the API & Web-App of a Geolocation App For Pets
-short_title: Build a Pet Geolocation API
+short_title: Pet Geolocation API for Web And Mobile App
 short_meta:  for Slobbr
-screenshot:
-graphic:
+screenshot:  /assets/images/paw-homescreen-thumb.jpg
+graphic:     /assets/images/paw-iphone.png
 slug:        slobbr
 tags:        [REST, api, symfony, php, ui-design, front-end, back-end, data-scraping]
 cta_text:    Do you or your animal need first class web expertise?
