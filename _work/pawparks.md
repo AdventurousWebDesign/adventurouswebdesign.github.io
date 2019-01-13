@@ -1,6 +1,6 @@
 ---
 title:       Power the API & Web-App of a Geolocation App For Pets
-short_title: Pet Geolocation API for Web And Mobile App
+short_title: Pet Geolocation API for Web + Mobile Apps
 short_meta:  for Slobbr
 screenshot:  /assets/images/paw-homescreen-thumb.jpg
 graphic:     /assets/images/paw-iphone.png
@@ -14,6 +14,8 @@ cta_text:    Do you or your animal need first class web expertise?
 To help pitch investors, we collaborated with [app founder Jon
 Lagasse][netcapital]. Together, we created the minimum viable product originally
 called Paw Parks.
+
+<small>(Click the thumbnails below for videos of the app in action.)</small>
 
 {% include gallery.html pics="paw-login-thumb.jpg~PawParks Login Screen~paw-login-thumb.jpg
 paw-homescreen-video.mp4~Homescreen~paw-homescreen-thumb.jpg
@@ -30,9 +32,10 @@ in order to prove our concept. I'd be excited to work with them again.
   company="Slobbr" %}
 
 
-Adding a [REST API][rest] to the web application was the next step, in order to
-support a native mobile app. Coordinating with an external iOS team, we defined
-API endpoints to power these web and iOS features simultaneously:
+Adding a [REST API][rest] to the web application was the next step. We did this
+in order support a native mobile app, too. Coordinating with an external iOS
+team, we defined API endpoints to power these web and iOS features
+simultaneously:
 
 <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin data-uk-grid-match>
   <div>{% include card.html text="Geolocate-detected Check-Ins."
@@ -55,7 +58,10 @@ iteration of the app:
    <source src="/assets/images/paw-app-main.webm" type="video/webm">
 </video>
 
-Setting a "home park", looking at the STAy score, and checking in.
+More features: Setting a "home park", looking at the "STAy" score, and doing the
+actual "checking in". STAy score being a shorthand for Size, Temperament and
+Activity Level. Parks STAy scores were tabulated based on the dogs who recently
+checked in.
 
 <video autoplay controls class="uk-margin-large uk-align-center">
    <source src="/assets/images/paw-app-check-in.webm" type="video/webm">
