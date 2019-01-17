@@ -56,6 +56,7 @@ iteration of the app:
 
 <video autoplay controls class="uk-margin-large uk-align-center">
    <source src="/assets/images/paw-app-main.webm" type="video/webm">
+   <source src="/assets/images/paw-app-main.mp4" type="video/mp4">
 </video>
 
 More features: Setting a "home park", looking at the "STAy" score, and doing the
@@ -65,6 +66,7 @@ checked in.
 
 <video autoplay controls class="uk-margin-large uk-align-center">
    <source src="/assets/images/paw-app-check-in.webm" type="video/webm">
+   <source src="/assets/images/paw-app-check-in.mp4" type="video/mp4">
 </video>
 
 In it's heydey, the app had a a philanthropic angle, too. This meant that a
