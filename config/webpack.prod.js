@@ -11,7 +11,7 @@ module.exports = Merge(
     mode: 'production',
     output: {
       filename: '[name]-[hash].bundle.js',
-      path: path.resolve('assets'),
+      path: path.resolve(`${__dirname}'/../assets`),
       publicPath: '/assets/',
     },
     plugins: [

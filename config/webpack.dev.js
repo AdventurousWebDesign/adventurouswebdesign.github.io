@@ -9,8 +9,8 @@ module.exports = merge(common, {
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve('assets'),
-    publicPath: '/assets/',
+    path: path.resolve(`${__dirname}'/../assets`),
+    publicPath: '/assets/'
   },
   module: {
     rules: [

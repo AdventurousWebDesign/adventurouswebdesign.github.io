@@ -2,12 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: {
     app: './_src/index.js',
   },
   plugins: [
+    new CopyWebpackPlugin([{ from: '_assets' }]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
@@ -51,8 +54,18 @@ module.exports = {
             },
           },
         ],
-      },
-      {
+      }, {
+        test: /font\/.*\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      }, {
         test: /\.(sa|sc|c)ss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',

@@ -5,6 +5,7 @@ import UIKit from 'uikit';
 import { TweenMax, Power3 } from 'gsap/TweenMax';
 import 'uikit/dist/js/components/sticky';
 import 'uikit/dist/js/components/notify';
+import logo from './img/adventurouswebdesign.svg';
 
 (($) => {
   /*
@@ -18,7 +19,7 @@ import 'uikit/dist/js/components/notify';
   const $logo = $('#logo');
 
   $logo.empty().append($('<img />', {
-    src: '/assets/adventurouswebdesign.svg',
+    src: logo,
     style: 'padding-top:20px',
   }));
 
