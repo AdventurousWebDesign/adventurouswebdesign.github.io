@@ -4,6 +4,8 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
+const webfonts = require('./webfonts');
 
 module.exports = Merge(
   CommonConfig,
@@ -24,6 +26,7 @@ module.exports = Merge(
         filename: '[name]-[hash].css',
         chunkFilename: '[id].css',
       }),
+      new GoogleFontsPlugin(Merge(webfonts, {})),
     ],
   },
 );

@@ -1,11 +1,13 @@
-const merge = require('webpack-merge');
+const Merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
+const webfonts = require('./webfonts');
 
-module.exports = merge(common, {
+module.exports = Merge(common, {
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
@@ -36,6 +38,7 @@ module.exports = merge(common, {
     ),
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('[name].css'),
+    new GoogleFontsPlugin(Merge(webfonts, { local: true })),
   ],
   devServer: {
     contentBase: [

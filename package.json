@@ -45,6 +45,7 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "@beyonk/google-fonts-webpack-plugin": "^1.2.3",
     "copy-webpack-plugin": "^4.6.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gsap": "^2.0.2",
