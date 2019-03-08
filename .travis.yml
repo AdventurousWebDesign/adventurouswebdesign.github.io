@@ -9,8 +9,8 @@ env:
   - TRAVIS_NODE_VERSION="7"
 
 cache:
-  directories:
-    - $HOME/~/.npm/_cacache
+  - npm
+  - bundler
 
 before_script:
   - bundle install
