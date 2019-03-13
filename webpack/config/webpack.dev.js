@@ -11,8 +11,8 @@ module.exports = Merge(common, {
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(`${__dirname}'/../assets`),
-    publicPath: '/assets/'
+    path: path.resolve(`${__dirname}'/../../jekyll/assets`),
+    publicPath: '../../jekyll/assets/'
   },
   module: {
     rules: [

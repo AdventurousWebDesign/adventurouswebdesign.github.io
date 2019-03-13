@@ -13,8 +13,8 @@ module.exports = Merge(
     mode: 'production',
     output: {
       filename: '[name]-[hash].bundle.js',
-      path: path.resolve(`${__dirname}'/../assets`),
-      publicPath: '/assets/',
+      path: path.resolve(`${__dirname}'/../../jekyll/assets`),
+      publicPath: '../../jekyll/assets/',
     },
     plugins: [
       new webpack.LoaderOptionsPlugin({

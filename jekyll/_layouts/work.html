@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+        {% include favicon.html %}
+        {% include tracking.html %}
+        {% if nil != page.asciinema %}<link href="/assets/asciinema/ascii.css" rel="stylesheet">{% endif %}
+    <link href="/assets/app-db185f0b2ebb7b94a0d2.css" rel="stylesheet"><link href="/assets/fonts.css" rel="stylesheet"><link href="../../jekyll/assets/app-0a2553f3235d1a1fbf2d.css" rel="stylesheet"><link href="../../jekyll/assets/fonts.css" rel="stylesheet"></head>
+    <body class="portfolio">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        {% include nav.html %}
+
+        <div class="portfolio-container portfolio-container--expanded">
+            <div class="portfolio-meta">
+                <h1 class="portfolio__title">{{ page.title }}</h1>
+                <span class="portfolio__tags">{{ page.tags | array_to_sentence_string: '' }}</span>
+            </div>
+        </div>
+
+        <div class="portfolio-container">
+            <div class="portfolio__body">
+                {{ page.content }}
+            </div>
+        </div>
+
+        {% if nil != page.cta_text %}
+            {% include cta.html text=page.cta_text %}
+        {% endif %}
+
+        {% include footer.html %}
+
+        <!-- JavaScript libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        {% capture page_specific_script %}{{ page.slug | prepend: 'scripts/posts/' | append: '.js'}}{% endcapture %}
+        {% capture page_specific_script_exists %}{% file_exists {{ page_specific_script | prepend: '_includes/' }} %}{% endcapture %}
+        {% if 'true' == page_specific_script_exists %}
+        <script type="text/javascript">
+            {% include {{ page_specific_script }} %}
+        </script>
+        {% endif %}
+
+        {% if nil != page.asciinema %}
+          <script type="text/javascript" src="/assets/asciinema/ascii.js"></script>
+        {% endif %}
+
+        <div class="portfolio-bg portfolio-bg--1"></div>
+        <div class="portfolio-bg portfolio-bg--2"></div>
+    <script type="text/javascript" src="/assets/app-db185f0b2ebb7b94a0d2.bundle.js"></script><script type="text/javascript" src="../../jekyll/assets/app-0a2553f3235d1a1fbf2d.bundle.js"></script></body>
+</html>

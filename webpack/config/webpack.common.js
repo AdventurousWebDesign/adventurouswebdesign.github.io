@@ -3,14 +3,13 @@ const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
 
 module.exports = {
   entry: {
-    app: './_src/index.js',
+    app: './webpack/src/index.js',
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: '_assets' }]),
+    new CopyWebpackPlugin([{ from: 'jekyll/_assets' }]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
@@ -18,18 +17,18 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
-      template: './_src/template/master.html',
-      filename: '../_layouts/master.html',
+      template: './webpack/template/master.html',
+      filename: '../../jekyll/_layouts/master.html',
       alwaysWriteToDisk: true,
     }),
     new HtmlWebpackPlugin({
-      template: './_src/template/work.html',
-      filename: '../_layouts/work.html',
+      template: './webpack/template/work.html',
+      filename: '../../jekyll/_layouts/work.html',
       alwaysWriteToDisk: true,
     }),
     new HtmlWebpackPlugin({
-      template: './_src/template/default.html',
-      filename: '../_layouts/default.html',
+      template: './webpack/template/default.html',
+      filename: '../../jekyll/_layouts/default.html',
       alwaysWriteToDisk: true,
     }),
     new HtmlWebpackHarddiskPlugin(),
