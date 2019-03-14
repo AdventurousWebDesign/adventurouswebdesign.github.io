@@ -13,16 +13,16 @@ cache:
   - bundler
 
 before_script:
-  - bundle install
-  - npm install
+  - cd $TRAVIS_BUILD_DIR/jekyll && bundle install
+  - cd $TRAVIS_BUILD_DIR && npm install
 
 script:
   - npm run webpack:prod
-  - bundle exec rake
+  - cd $TRAVIS_BUILD_DIR/jekyll && bundle exec rake
 
 deploy:
   provider: pages
-  local-dir: _site
+  local-dir: jekyll/_site
   target-branch: master
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
