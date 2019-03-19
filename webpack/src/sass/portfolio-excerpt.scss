@@ -58,6 +58,8 @@
   color: $base-body-color;
   font-size: 14px;
   line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .portfolio-excerpt__image {
