@@ -9,7 +9,7 @@
     "url": "https://github.com/AdventurousWebDesign/adventurouswebdesign.github.io"
   },
   "scripts": {
-    "dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"bundle exec jekyll build -w\"",
+    "dev": "concurrently \"webpack --env=dev --progress --profile --colors; webpack-dev-server --env=dev\" \"cd jekyll && bundle exec jekyll build -w\"",
     "jekyll": "cd jekyll && bundle exec jekyll build",
     "webpack:dev": "webpack --env=dev",
     "webpack:prod": "webpack --env=prod --progress --profile --colors"

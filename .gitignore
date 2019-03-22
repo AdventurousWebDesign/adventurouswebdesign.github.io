@@ -1,6 +1,7 @@
 _site/
 .sass-cache
 node_modules
-assets
-_layouts/*.html
+webpack/assets
+jekyll/assets
+jekyll/_layouts/*.html
 Gemfile.lock

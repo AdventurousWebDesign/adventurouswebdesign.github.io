@@ -12,7 +12,7 @@ module.exports = Merge(common, {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(`${__dirname}'/../../jekyll/assets`),
-    publicPath: '../../jekyll/assets/'
+    publicPath: '/assets/'
   },
   module: {
     rules: [
@@ -42,7 +42,7 @@ module.exports = Merge(common, {
   ],
   devServer: {
     contentBase: [
-      path.resolve('_site'),
+      path.resolve('jekyll/_site'),
     ],
     hot: true,
   },
