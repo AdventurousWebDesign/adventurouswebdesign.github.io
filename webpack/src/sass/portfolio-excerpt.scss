@@ -120,16 +120,16 @@
 .portfolio-excerpt--large {
   box-shadow: 0 0 5px rgba(black, 0.1);
   padding: 25px;
-  background: radial-gradient(white 60%, rgba(white, 0.10)), url(/img/topo-map.svg) 100%;
+  background: radial-gradient(white 60%, rgba(white, 0.10)), url(../img/topo-map.svg) 100%;
   border: 1px solid #fff;
 
   &:nth-of-type(2n) {
-    background: radial-gradient(white 60%, rgba(white, 0.10)), url(/img/topo-map-flipped.svg) 100%;
+    background: radial-gradient(white 60%, rgba(white, 0.10)), url(../img/topo-map-flipped.svg) 100%;
   }
 
   &:hover {
-    background: radial-gradient(white 30%, rgba(white, 0.05)), url(/img/topo-map.svg) 100%;
-    &:nth-of-type(2n) { background: radial-gradient(white 30%, rgba(white, 0.05)), url(/img/topo-map-flipped.svg) 100%; }
+    background: radial-gradient(white 30%, rgba(white, 0.05)), url(../img/topo-map.svg) 100%;
+    &:nth-of-type(2n) { background: radial-gradient(white 30%, rgba(white, 0.05)), url(../img/topo-map-flipped.svg) 100%; }
     border: 1px solid #eee;
 
     .portfolio-excerpt__image { transform: rotate(-2deg); }
