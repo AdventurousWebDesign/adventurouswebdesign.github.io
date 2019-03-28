@@ -1,4 +1,4 @@
-<svg width="580px" height="315px" viewBox="0 0 580 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="{{ include.width | default: '580px' }}" height="{{ include.height | default: '315px' }}" viewBox="{{ include.viewBox | default: '0 0 580 315' }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <linearGradient x1="100.000084%" y1="50%" x2="0.000209156889%" y2="50%" id="linearGradient-1">
             <stop stop-color="#E5E5E5" offset="0%"></stop>
