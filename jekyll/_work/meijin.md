@@ -4,6 +4,7 @@ short_title: Code a Dependable Learning Management System
 short_meta:  for The Academy of Culinary Nutrition
 screenshot:  /assets/images/meijin-dashboard.png
 graphic:     /assets/images/meijin-monk.png
+img_alt:     A monk, meditating & levitation.
 slug:        meijin
 tags:        [wordpress, lms, qa, ecommerce, plugin, interoperativity]
 asciinema:   true

@@ -1,11 +1,12 @@
 {% capture image-src %}{{ include.post.graphic | default: image.post.screenshot | asset_url }}{% endcapture %}
+{% capture image-alt %}{{ include.post.img_alt | default: "Image for "~include.post.short_title }}{% endcapture %}
 
 <article class="{{ include.extra-class }}">
   <a class="portfolio-excerpt portfolio-excerpt--large" href="{{ include.post.url }}">
     <div class="uk-grid uk-grid-medium">
       <div class="uk-width-medium-1-3 uk-hidden-small">
         <div class="portfolio-excerpt__image">
-          <img src="{{ image-src }}" />
+          <img src="{{ image-src }}" alt="{{ image-alt }}" />
         </div>
       </div>
 

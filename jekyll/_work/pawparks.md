@@ -4,6 +4,7 @@ short_title: Pet Geolocation API for Web + Mobile Apps
 short_meta:  for Slobbr
 screenshot:  /assets/images/paw-homescreen-thumb.jpg
 graphic:     /assets/images/paw-iphone.png
+img_alt:     An iPhone wireframe of the PawParks app.
 slug:        slobbr
 tags:        [REST, api, symfony, php, ui-design, front-end, back-end, data-scraping]
 cta_text:    Do you or your animal need first class web expertise?

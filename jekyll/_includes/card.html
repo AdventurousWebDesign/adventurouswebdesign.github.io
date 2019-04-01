@@ -1,5 +1,5 @@
 <div class="card card--{{ include.orientation | default: 'horizontal' }}">
-  <div class="card__image{% if include.orientation == 'vertical' %} uk-flex uk-flex-center uk-flex-bottom{% endif %}"><img src="{{ include.img }}"></div>
+  <div class="card__image{% if include.orientation == 'vertical' %} uk-flex uk-flex-center uk-flex-bottom{% endif %}"><img src="{{ include.img }}" alt="" /></div>
   <div class="card__text">{{ include.text }}</div>
 </div>
 

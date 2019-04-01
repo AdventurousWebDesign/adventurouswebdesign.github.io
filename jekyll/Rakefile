@@ -1,6 +1,7 @@
 # Rakefile
 
 require 'jekyll'
+require 'html-proofer'
 
 task default: %w[build]
 
@@ -11,4 +12,17 @@ task :build do
   })
   site = Jekyll::Site.new(config)
   Jekyll::Commands::Build.build(site, config)
+end
+
+desc "Test w/ html-proofer that"
+task :test do
+  Rake::Task["build"].invoke
+
+  options = {
+    :assume_extension => true,
+    :allow_hash_href => true,
+    :empty_alt_ignore => true,
+  }
+
+  HTMLProofer.check_directory("./_site", options).run
 end

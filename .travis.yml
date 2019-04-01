@@ -18,7 +18,7 @@ before_script:
 
 script:
   - npm run webpack:prod
-  - cd $TRAVIS_BUILD_DIR/jekyll && bundle exec rake
+  - cd $TRAVIS_BUILD_DIR/jekyll && bundle exec rake test
 
 deploy:
   provider: pages

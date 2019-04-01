@@ -4,6 +4,7 @@ short_title: Designing & Building a Sales Workflow
 short_meta:  for an International We Day Campaign
 screenshot:  /assets/images/weschools-screen-1-thumb.png
 graphic:     /assets/images/weschools-shirt.png
+img_src:     A shirt with the Me to We Style logo on it.
 slug:        we-schools
 tags:        [front-and-back-end development, visual design, analytics, email, multi-language]
 cta_text:    We love working with people whose aim is to make the world a better place. <br /> Could that be you? We want to see you in our inbox!
