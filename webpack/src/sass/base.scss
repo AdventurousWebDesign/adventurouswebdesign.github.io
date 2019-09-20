@@ -8,8 +8,8 @@ $tagline-size:   60px;
 .disable-hover, .disable-hover * { pointer-events: none; }
 
 #logo {
-	font-size: ($base-h1-font-size * 1.25);
-	line-height: ($base-h1-font-size * 1.15);
+  font-size: ($base-h1-font-size * 1.25);
+  line-height: ($base-h1-font-size * 1.15);
 }
 
 .italic { font-style: italic; }
@@ -21,7 +21,7 @@ $tagline-size:   60px;
 }
 
 .bg-grey {
-	background: $grey;
+  background: $grey;
 }
 
 .bg-grey-topo {
@@ -31,7 +31,7 @@ $tagline-size:   60px;
 }
 
 .icon-link i {
-	padding-right: 10px;
+  padding-right: 10px;
 }
 
 .padding-lg {
@@ -40,41 +40,41 @@ $tagline-size:   60px;
 }
 
 .tm-header-bg {
-	width:100%;
-	height: $banner-height;
-	position: fixed;
-	z-index:-100;
+  width:100%;
+  height: $banner-height;
+  position: fixed;
+  z-index:-100;
 
-	> div {
-		position:absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height: $banner-height;
-		background-repeat:no-repeat;
-		background-size:cover;
-		background-position:center 0;
-	}
+  > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: $banner-height;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center 0;
+  }
 
-	.bg-mountain {
-		z-index:10;
-		background-image:url(/assets/mountains.jpg);
-	}
+  .bg-mountain {
+    z-index:10;
+    background-image:url(/assets/mountains.jpg);
+  }
 
-	.bg-mountainblur {
-		z-index:20;
-		background-image:url(/assets/mountains-blurred.jpg);
-		opacity:0;
+  .bg-mountainblur {
+    z-index:20;
+    background-image:url(/assets/mountains-blurred.jpg);
+    opacity:0;
     will-change: opacity;
-	}
+  }
 
-	& + .tm-header-container {
-		height: $banner-height;
-		h1, h2, h3 { color: $tm-white; }
-		#logo .italic {
-			font-size: ($base-h1-font-size * 1.25) - 4px;
-		}
-	}
+  & + .tm-header-container {
+    height: $banner-height;
+    h1, h2, h3 { color: $tm-white; }
+    #logo .italic {
+      font-size: ($base-h1-font-size * 1.25) - 4px;
+    }
+  }
 
 }
 
@@ -83,40 +83,40 @@ $tagline-size:   60px;
 }
 
 .tm-container {
-	background: white;
-	overflow: hidden;
+  background: white;
+  overflow: hidden;
 }
 
 .hook-article-meta {
-	margin: 0px;
-	& + p {
-		margin-top: 15px;
-	}
+  margin: 0px;
+  & + p {
+    margin-top: 15px;
+  }
 }
 
 .hook-article-title {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio-grid {
-	.uk-overlay, img { width: 100%; }
+  .uk-overlay, img { width: 100%; }
 }
 
 @mixin hook-list-misc() {
-	.uk-list.uk-list-small {
-		font-size: 0.8em;
-	}
-	.uk-list.uk-list-indented {
-		padding-left: 30px;
-	}
+  .uk-list.uk-list-small {
+    font-size: 0.8em;
+  }
+  .uk-list.uk-list-indented {
+    padding-left: 30px;
+  }
 }
 
 .icon-list {
-	.icon-list__icon {
-		min-width: 30px;
-		display: inline-block;
-		text-align: center;
-	}
+  .icon-list__icon {
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: $breakpoint-large) { #macbook svg { min-width: 530px; } }
