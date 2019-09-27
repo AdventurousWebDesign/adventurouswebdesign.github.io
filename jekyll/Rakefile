@@ -22,6 +22,10 @@ task :test do
     :assume_extension => true,
     :allow_hash_href => true,
     :empty_alt_ignore => true,
+    :typhoeus => {
+      :ssl_verifypeer => false,
+      :ssl_verifyhost => 0
+    }
   }
 
   HTMLProofer.check_directory("./_site", options).run
