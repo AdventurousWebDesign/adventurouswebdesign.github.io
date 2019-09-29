@@ -3,9 +3,9 @@ layout: default
 title: Blog
 ---
 
-<ul>
+<ul class="uk-list">
   {% for post in site.posts %}
-    <li>
+    <li class="uk-margin-bottom">
       <a href="{{ post.url }}">
         <h3 style="margin-bottom: 0;">{{ post.title }}</h3>
         <small class="ttu">{{ post.date | date: "%B %d, %Y" }}</small>

@@ -66,8 +66,6 @@
       <li class="offcanvas-nav__header {% if page.url contains '/blog/' %}active{% endif %}">
         <a href="/blog/">
           Blog
-          <div class="offcanvas-nav__sub-header">Thoughts and what-have-you.</div>
-
           {% for post in site.posts %}
             <li class="offcanvas-nav__item"><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
