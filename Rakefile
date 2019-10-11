@@ -1,0 +1,32 @@
+# Rakefile
+
+require 'jekyll'
+require 'html-proofer'
+
+task default: %w[build]
+
+desc "Build the site"
+task :build do
+  config = Jekyll.configuration({
+    google_analytics_id: ENV["GOOGLE_ANALYTICS_ID"],
+  })
+  site = Jekyll::Site.new(config)
+  Jekyll::Commands::Build.build(site, config)
+end
+
+desc "Test w/ html-proofer that"
+task :test do
+  Rake::Task["build"].invoke
+
+  options = {
+    :assume_extension => true,
+    :allow_hash_href => true,
+    :empty_alt_ignore => true,
+    :typhoeus => {
+      :ssl_verifypeer => false,
+      :ssl_verifyhost => 0
+    }
+  }
+
+  HTMLProofer.check_directory("./_site", options).run
+end

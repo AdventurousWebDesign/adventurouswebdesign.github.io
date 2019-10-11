@@ -1,0 +1,37 @@
+<svg width="64px" height="54px" viewBox="0 0 64 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_1290639_cc" fill="#444444" fill-rule="nonzero">
+            <g id="Group" transform="translate(25.280000, 14.080000)">
+                <rect id="Rectangle-path" x="0.2944" y="0.07648" width="6.744" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="7.0384" y="8.88992" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="7.0384" y="13.2944" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="7.0384" y="26.51424" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="7.0384" y="30.92" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.2944" y="4.48224" width="14.00256" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.2944" y="17.70208" width="6.744" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.2944" y="22.10784" width="14.00256" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="8.88992" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="13.2944" width="14.00256" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="26.51424" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="30.92" width="14.00256" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="4.48224" width="7.25856" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.13536" y="22.10784" width="7.25856" height="2.31328"></rect>
+            </g>
+            <g id="Group">
+                <path d="M64,53.65376 L0,53.65376 L0,7.81728 L64,7.81728 L64,53.65376 Z M2.31328,51.34016 L61.68672,51.34016 L61.68672,10.13056 L2.31328,10.13056 L2.31328,51.34016 Z" id="Shape"></path>
+                <path d="M64,10.13056 L0,10.13056 L0,0.10656 L64,0.10656 L64,10.13056 Z M2.31328,7.81728 L61.68672,7.81728 L61.68672,2.41984 L2.31328,2.41984 L2.31328,7.81728 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="5.01216" y="3.96192" width="2.31328" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="9.63872" y="3.96192" width="2.31328" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="14.26496" y="3.96192" width="2.31328" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="17.992" y="8.97376" width="2.31328" height="43.52288"></rect>
+            </g>
+            <g id="Group" transform="translate(4.800000, 14.080000)">
+                <path d="M0.21216,0.07648 L0.21216,11.2032 L10.49312,11.2032 L10.49312,0.07648 L0.21216,0.07648 Z M8.17984,8.88992 L2.52544,8.88992 L2.52544,2.38976 L8.17984,2.38976 L8.17984,8.88992 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="0.21216" y="13.2944" width="10.28096" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.21216" y="17.70016" width="10.28096" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.21216" y="22.10464" width="10.28096" height="2.31328"></rect>
+                <rect id="Rectangle-path" x="0.21216" y="26.5104" width="10.28096" height="2.31328"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

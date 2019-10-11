@@ -1,0 +1,11 @@
+<svg width="64px" height="55px" viewBox="0 0 64 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DropboxGlyph_Blue" fill="#444444" fill-rule="nonzero">
+            <polygon id="Shape" points="15.998641 0 0 10.3529412 15.998641 20.7058824 32 10.3529412"></polygon>
+            <polygon id="Shape" points="48 0 32 10.3529412 48 20.7058824 64 10.3529412"></polygon>
+            <polygon id="Shape" points="0 31.0588235 15.998641 41.4117647 32 31.0588235 15.998641 20.7058824"></polygon>
+            <polygon id="Shape" points="48 20.7058824 32 31.0588235 48 41.4117647 64 31.0588235"></polygon>
+            <polygon id="Shape" points="17.6744186 45.0588235 32.0012168 54.1176471 46.3255814 45.0588235 32.0012168 36"></polygon>
+        </g>
+    </g>
+</svg>

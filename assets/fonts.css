@@ -1,0 +1,63 @@
+/* === Fanwood Text - regular */
+@font-face {
+	font-family: 'Fanwood Text';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/FanwoodText-Regular.eot");
+	src: local("Fanwood Text"),
+		local("FanwoodText-Regular"),
+		url("./font/FanwoodText-Regular.eot") format("embedded-opentype"),
+		url("./font/FanwoodText-Regular.woff2") format("woff2"),
+		url("./font/FanwoodText-Regular.woff") format("woff"),
+		url("./font/FanwoodText-Regular.ttf") format("truetype"),
+		url("./font/FanwoodText-Regular.svg") format("svg");
+}
+
+/* === Fanwood Text - italic */
+@font-face {
+	font-family: 'Fanwood Text';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/FanwoodText-Italic.eot");
+	src: local("Fanwood Text Italic"),
+		local("FanwoodText-Italic"),
+		url("./font/FanwoodText-Italic.eot") format("embedded-opentype"),
+		url("./font/FanwoodText-Italic.woff2") format("woff2"),
+		url("./font/FanwoodText-Italic.woff") format("woff"),
+		url("./font/FanwoodText-Italic.ttf") format("truetype"),
+		url("./font/FanwoodText-Italic.svg") format("svg");
+}
+
+/* === Open Sans - 300 */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url("./font/OpenSans-Light.eot");
+	src: local("Open Sans Light"),
+		local("OpenSans-Light"),
+		url("./font/OpenSans-Light.eot") format("embedded-opentype"),
+		url("./font/OpenSans-Light.woff2") format("woff2"),
+		url("./font/OpenSans-Light.woff") format("woff"),
+		url("./font/OpenSans-Light.ttf") format("truetype"),
+		url("./font/OpenSans-Light.svg") format("svg");
+}
+
+/* === Open Sans - regular */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/OpenSans-Regular.eot");
+	src: local("Open Sans Regular"),
+		local("OpenSans-Regular"),
+		url("./font/OpenSans-Regular.eot") format("embedded-opentype"),
+		url("./font/OpenSans-Regular.woff2") format("woff2"),
+		url("./font/OpenSans-Regular.woff") format("woff"),
+		url("./font/OpenSans-Regular.ttf") format("truetype"),
+		url("./font/OpenSans-Regular.svg") format("svg");
+}
