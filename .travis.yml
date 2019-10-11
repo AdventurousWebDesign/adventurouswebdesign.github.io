@@ -9,8 +9,9 @@ env:
   - TRAVIS_NODE_VERSION="7"
 
 cache:
-  - $TRAVIS_BUILD_DIR/jekyll/vendor
-  - $TRAVIS_BUILD_DIR/node_modules
+  directories:
+    - $TRAVIS_BUILD_DIR/jekyll/vendor
+    - $TRAVIS_BUILD_DIR/node_modules
 
 before_script:
   - cd $TRAVIS_BUILD_DIR/jekyll && bundle install
