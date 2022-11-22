@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/AdventurousWebDesign/adventurouswebdesign.github.io",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^2.2.2",
     "concurrently": "^3.6.1",
     "cryptiles": ">=4.1.2",
