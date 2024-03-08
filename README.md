@@ -1,7 +1,5 @@
 # Adventurous Web Design
 
-[![Build Status](https://travis-ci.org/AdventurousWebDesign/adventurouswebdesign.github.io.svg?branch=develop)](https://travis-ci.org/AdventurousWebDesign/adventurouswebdesign.github.io)
-
 The repository for the website of [Adventurous Web
 Design](https://adventurouswebdesign.github.io). (By way of GitHub Pages).
 
